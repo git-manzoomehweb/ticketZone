@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,shrink-to-fit=no,viewport-fit=cover"
+    />
+    <title>
+      [##cms.seo.title|( Connection to the server was not successful! )##]
+    </title>
+    <meta
+      name="description"
+      content=" Ticketzone Travel Agency | Your Trusted Partner for Global Travel | Experience the best flight and hotel booking"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <basis
+      core="dbsource"
+      source="hosting"
+      name="tag"
+      urlid="[##cms.seo.urlid##]"
+    >
+      <member type="list" name="list" request="taglist" preview=""></member>
+    </basis>
+    <basis core="print" datamembername="tag.list">
+      <face filter="key = 'canonical'">
+        <link rel="canonical" href="@value" />
+      </face>
+      <face>
+        <meta property="@key" content="@value" />
+      </face>
+    </basis>
+    <basis core="call" lid="2" file="pwa.inc" />
+    <basis core="call" lid="2" file="style.inc" />
+    <link
+      rel="stylesheet"
+      href="[##cms.cms.cdn##]/_css/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <basis core="call" file="header.inc" lid="2" />
+    <main
+      class="w-full overflow-x-hidden flex flex-col gap-6 justify-center items-center my-32 bg-white"
+    >
+      <img src="[##cms.cms.cdn##]/images/500.svg" alt="404-page" class="" />
+      <h1>There was a problem connecting to the server.</h1>
+      <a
+        href="/"
+        class="tzone-btn group bg-transparent justify-center items-center cursor-pointer w-[140px] flex h-[49px] relative"
+      >
+        <div
+          class="w-full z-0 h-full hover:bg-primary-700 bg-secondary-900 text-white rounded-lg flex justify-center items-center"
+        >
+          Go Home
+        </div>
+      </a>
+    </main>
+     <basis core="call" file="footer.inc" lid="2" />
+  </body>
+ 
+</html>

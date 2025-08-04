@@ -1,0 +1,701 @@
+<basis
+  core="dbsource"
+  source="basiscore"
+  lid="2"
+  mid="1"
+  name="db"
+  catid="[##cms.query.catid##]"
+>
+  <member
+    name="bannerimage"
+    type="tree"
+    request="cat"
+    parentid=""
+    postsql="select * from [db.bannerimage] where catid = [##cms.query.catid##]"
+  />
+</basis>
+<basis core="dbsource" source="basiscore" lid="2" mid="1" name="article">
+  <member
+    name="cat-articles"
+    type="tree"
+    request="cat"
+    parentid="[##cms.query.catid##]"
+    order="ord"
+  />
+</basis>
+
+<basis
+  core="dbsource"
+  source="basiscore"
+  lid="2"
+  mid="1"
+  name="db"
+  catid="[##cms.query.catid##]"
+>
+  <member
+    name="article-list"
+    type="list"
+    link="article.bc"
+    propertyid="7244"
+    perpage="20"
+    pageno="[##cms.query.pagenum|(1)##]"
+    typeid="159"
+    size="288x288"
+    order="[##cms.Host.article-list-order|(ord)##]"
+  />
+  <member
+    name="paging"
+    type="list"
+    request="paging"
+    count="5"
+    parentname="article-list"
+  />
+</basis>
+
+<basis
+  core="dbsource"
+  source="basiscore"
+  lid="2"
+  mid="1"
+  name="db"
+  catid="215548"
+>
+  <member
+    link="article.bc"
+    name="the-Notice"
+    type="list"
+    propertyid="7244,7248,7249,3087661"
+    perpage="4"
+    typeid="159"
+    order="ord"
+  />
+</basis>
+
+<basis
+  core="dbsource"
+  source="basiscore"
+  name="db"
+  mid="1"
+  lid="2"
+  usedforid="2379748"
+>
+  <member typeid="159" propertyid="7249" name="about-us-article" type="view" />
+  <member name="data" type="view" request="rdfa" />
+</basis>
+
+<basis
+  core="dbsource"
+  source="media"
+  lid="2"
+  name="db"
+  usedforid="2379748"
+  sourcemid="article"
+>
+  <member type="list" name="gallery" format="4" order="ord"></member>
+</basis>
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[##cms.seo.title|( TicketZone Articles )##]</title>
+    <meta
+      name="description"
+      content="[##cms.seo.description|(TicketZone Articles)##]"
+    />
+    <link rel="canonical" href="[##cms.cms.full-url##]" />
+    <basis
+      core="dbsource"
+      source="hosting"
+      name="tag"
+      urlid="[##cms.seo.urlid##]"
+      ><member type="list" name="list" request="taglist" preview=""></member
+    ></basis>
+    <basis core="print" datamembername="tag.list"
+      ><face filter="key='canonical'"
+        ><link rel="canonical" href="@value" /></face
+      ><face><meta property="@key" content="@value" /></face
+    ></basis>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      href="[##cms.cms.cdn##]/images/custom_icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="[##cms.cms.cdn##]/_css/swiper-bundle.min.css"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="theme-color" content="#1F206F" />
+
+    <basis lid="2" core="call" file="style.inc" />
+  </head>
+  <body class="overflow-x-hidden">
+    <basis core="call" file="header.inc" lid="2" />
+    <main class="overflow-x-hidden">
+      <section
+        class="w-full relative flex justify-center items-center h-[305px]"
+      >
+        <basis core="print" datamembername="db.bannerimage">
+          <face filter="image is null">
+            <img
+              width="375"
+              loading="lazy"
+              height="89"
+              src="[##cms.cms.cdn##]/images/news-list-bg-mob.jpg"
+              alt="@title"
+              class="object-cover w-full h-full absolute top-0 left-0 z-0"
+            />
+          </face>
+          <face>
+            <img
+              width="375"
+              height="89"
+              src="@image"
+              alt="article-list-bg"
+              class="object-cover w-full h-full absolute top-0 left-0 z-0"
+            />
+          </face>
+        </basis>
+        <span class="absolute w-full h-full z-[1] ling-ar"></span>
+        <div
+          class="xl:!px-0 px-5 z-[2] py-16 lg:px-5 flex-col w-full gap-1 flex xl:!w-[1280px]"
+        >
+          <h1 class="text-white font-bold text-xl">News</h1>
+          <ul class="flex items-center gap-1">
+            <li class="">
+              <a href="/" class="text-sm text-white">Home</a>
+            </li>
+            <li class="text-white text-sm">/</li>
+            <li class="text-white text-sm">News</li>
+          </ul>
+
+          <basis core="print" datamembername="article.cat-articles">
+            <face filter="urldescription is null"
+              ><p class="text-white text-xs leading-5 mt-6 w-[90%]">
+                Experience bespoke itineraries and unparalleled service.Explore
+                the world without breaking the bank.
+              </p></face
+            >
+            <face>
+              <p class="text-white text-xs leading-5 mt-6 w-[90%]">
+                @urldescription
+              </p>
+            </face>
+          </basis>
+
+          <form
+            id="search-content-article"
+            action=""
+            class="seraching-form search-content relative flex flex-col gap-[5px] mt-5"
+          >
+            <input
+              autocomplete="off"
+              required
+              id="search-content-name"
+              placeholder="blog saerch"
+              class="w-full px-4 focus:outline-none outline-none focus:border-0 text-zinc-600 placeholder:text-zinc-600 border border-primary-200 rounded-xl h-[50px]"
+              type="text"
+            />
+            <a
+              type="submit"
+              class="group transition-all duration-300 ease-in-out bg-transparent justify-center items-center cursor-pointer w-[140px] flex h-[48px] relative"
+            >
+              <span class="absolute top-[0] left-0">
+                <svg
+                  width="30"
+                  height="48"
+                  viewBox="0 0 30 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 48C3.58172 48 3.13124e-07 44.4183 6.99382e-07 40L1.04907e-06 36C6.62742 36 12 30.6274 12 24C12 17.3726 6.62742 12 3.14722e-06 12L3.49691e-06 8C3.88317e-06 3.58172 3.58173 -2.30956e-06 8 -1.9233e-06L30 0L30 48L8 48Z"
+                    fill="#FE6B22"
+                  />
+                </svg>
+              </span>
+              <div
+                class="w-[82px] group-hover:font-bold transition-all duration-300 ease-in-out z-0 h-full bg-secondary-900 text-white flex justify-center items-center"
+              >
+                Search
+              </div>
+              <span class="absolute top-[0] right-0"
+                ><svg
+                  width="30"
+                  height="48"
+                  viewBox="0 0 30 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 0C26.4183 0 30 3.58172 30 8V12C23.3726 12 18 17.3726 18 24C18 30.6274 23.3726 36 30 36V40C30 44.4183 26.4183 48 22 48H0V0H22Z"
+                    fill="#FE6B22"
+                  />
+                </svg>
+              </span>
+            </a>
+            <input type="hidden" value="2" name="lid" />
+            <input id="catidsearched" type="hidden" value="0" name="id" />
+            <ul
+              class="flex-col top-full absolute overflow-hidden hidden w-full shadow-lg search-drop-down bg-white rounded-lg"
+            >
+              <div class="w-full flex flex-col overflow-auto h-178px">
+                <basis core="list" datamembername="db.article-list">
+                  <face filter="link is null">
+                    <li onclick="contentSearched('@title','@id')">
+                      @title
+                      <span class="hidden linkspan"
+                        >/article.bc?lid=1&id=@id</span
+                      >
+                    </li>
+                  </face>
+                  <face>
+                    <li onclick="contentSearched('@title','@id')">
+                      @title
+                      <span class="hidden linkspan">/@link</span>
+                    </li>
+                  </face>
+                </basis>
+              </div>
+            </ul>
+          </form>
+        </div>
+      </section>
+
+      <section
+        class="w-full py-20 news-list relative flex justify-center items-center"
+      >
+        <div
+          class="px-5 xl:!px-0 lg:px-5 w-full flex-col gap-8 flex xl:!w-[1280px]"
+        >
+          <basis core="print" datamembername="db.article-list">
+            <layout>
+              <div class="w-full grid grid-cols-1 gap-[23px]">@child</div>
+            </layout>
+            <face filter="link is null">
+              <a
+                href="/article.bc?lid=2&id=@id"
+                class="flex flex-col group gap-[8px]"
+              >
+                <img
+                  width="288"
+                  height="288"
+                  src="@00288X00288prp"
+                  alt="@title"
+                  
+                  class="shadow1 w-full h-[288px] rounded-[15px]"
+                />
+                <div class="flex flex-col gap-2 justify-between">
+                  <p class="text-base line-clamp-1">@title</p>
+                  <div class="line-clamp-4 text-xs text-zinc-500">
+                    @prp_7244
+                  </div>
+                  <button
+                    class="tzone-btn mt-2 bg-transparent justify-center items-center cursor-pointer w-[140px] flex h-[49px] relative"
+                  >
+                    <div
+                      class="w-full z-0 h-full group-hover:bg-primary-700 bg-secondary-900 text-white rounded-lg flex justify-center items-center"
+                    >
+                      Viwe More
+                    </div>
+                  </button>
+                </div>
+              </a>
+            </face>
+            <face>
+              <a href="@link" class="flex flex-col group gap-[8px]">
+                <img
+                  width="288"
+                  height="288"
+                  src="@00288X00288prp"
+                  alt="@title"
+                 
+                  class="shadow1 w-full h-[288px] rounded-[15px]"
+                />
+                <div class="flex flex-col gap-2 justify-between">
+                  <p class="text-base line-clamp-1">@title</p>
+                  <div class="line-clamp-4 text-xs text-zinc-500">
+                    @prp_7244
+                  </div>
+                  <button
+                    class="tzone-btn mt-2 bg-transparent justify-center items-center cursor-pointer w-[140px] flex h-[49px] relative"
+                  >
+                    <div
+                      class="w-full z-0 h-full group-hover:bg-primary-700 bg-secondary-900 text-white rounded-lg flex justify-center items-center"
+                    >
+                      Viwe More
+                    </div>
+                  </button>
+                </div>
+              </a>
+            </face>
+          </basis>
+
+          <div class="w-full flex gap-4 justify-center items-center">
+            <basis core="print" datamembername="db.paging">
+              <face filter="(@sta='pre')">
+                <a
+                  class="bg-zinc-100 group rounded-[8px] flex justify-center items-center w-[50px] h-[50px]"
+                  href="/[##cms.cms.link_page##]&pagenum=@page&catid=[##cms.query.catid##]"
+                  aria-label="angle-left"
+                >
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="50"
+                      height="50"
+                      rx="8"
+                      fill="#F4F4F5"
+                      class="group-hover:fill-primary-800"
+                    />
+                    <path
+                      d="M15.2929 24.2929C14.9024 24.6834 14.9024 25.3166 15.2929 25.7071L21.6569 32.0711C22.0474 32.4616 22.6805 32.4616 23.0711 32.0711C23.4616 31.6805 23.4616 31.0474 23.0711 30.6569L17.4142 25L23.0711 19.3431C23.4616 18.9526 23.4616 18.3195 23.0711 17.9289C22.6805 17.5384 22.0474 17.5384 21.6569 17.9289L15.2929 24.2929ZM34 25L34 24L16 24L16 25L16 26L34 26L34 25Z"
+                      fill="#71717A"
+                      class="group-hover:fill-white"
+                    />
+                  </svg>
+                </a>
+              </face>
+            </basis>
+
+            <basis core="print" datamembername="db.paging">
+              <face filter="(@page=[##cms.query.pagenum|(1)##])">
+                <a
+                  class="hover:bg-primary-800 text-sm hover:text-white bg-zinc-100 group rounded-[8px] flex justify-center items-center w-[50px] h-[50px]"
+                  href="/[##cms.cms.link_page##]&pagenum=@page&catid=[##cms.query.catid##]"
+                >
+                  @page
+                </a>
+              </face>
+              <face
+                filter="(@page<>[##cms.query.pagenum|(1)##]) and (@page>0) and (@sta='no')"
+              >
+                <a
+                  href="/[##cms.cms.link_page##]&pagenum=@page&catid=[##cms.query.catid##]"
+                  class="hover:bg-primary-800 text-sm hover:text-white bg-zinc-100 group rounded-[8px] flex justify-center items-center w-[50px] h-[50px]"
+                >
+                  @page
+                </a>
+              </face>
+            </basis>
+
+            <basis core="print" datamembername="db.paging">
+              <face filter="(@sta='nex')">
+                <a
+                  href="/[##cms.cms.link_page##]&pagenum=@page&catid=[##cms.query.catid##]"
+                  aria-label="angle-right"
+                  class="rotate-180 bg-zinc-100 group rounded-[8px] flex justify-center items-center w-[50px] h-[50px]"
+                >
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="50"
+                      height="50"
+                      rx="8"
+                      fill="#F4F4F5"
+                      class="group-hover:fill-primary-800"
+                    />
+                    <path
+                      d="M15.2929 24.2929C14.9024 24.6834 14.9024 25.3166 15.2929 25.7071L21.6569 32.0711C22.0474 32.4616 22.6805 32.4616 23.0711 32.0711C23.4616 31.6805 23.4616 31.0474 23.0711 30.6569L17.4142 25L23.0711 19.3431C23.4616 18.9526 23.4616 18.3195 23.0711 17.9289C22.6805 17.5384 22.0474 17.5384 21.6569 17.9289L15.2929 24.2929ZM34 25L34 24L16 24L16 25L16 26L34 26L34 25Z"
+                      fill="#71717A"
+                      class="group-hover:fill-white"
+                    />
+                  </svg>
+                </a>
+              </face>
+            </basis>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="w-full bg-[#E0F6FF] relative flex justify-center pt-7 pb-[140px] items-center"
+      >
+        <div
+          class="xl:!px-0 px-5 lg:px-5 w-full gap-5 flex flex-col xl:w-[1280px]"
+        >
+          <div class="w-full h-[601px] relative flex justify-center items-end">
+            <basis core="print" datamembername="db.info">
+              <face filter="valueID=4171141"
+                ><a
+                  href="tel:@text"
+                  class="absolute cs-ser z-10 bg-white right-[7px] items-center justify-center px-5 top-[3.5rem] py-3 flex flex-col gap-4 rounded-[36px] shadow-lg hover:shadow-2xl text-sm font-bold"
+                >
+                  <span class="text-red-600 text-xs">customer service</span>
+
+                  @text
+                </a>
+              </face>
+            </basis>
+            <div
+              class="bg-white ff-box px-4 py-4 shadow-xl font-bold left-10 rounded-[44px] absolute z-10 top-[44%]"
+            >
+              Flight Tickets
+            </div>
+            <div
+              class="bg-white box-tt px-4 py-4 text-xs shadow-xl font-bold right-10 rounded-[44px] absolute z-10 top-[52%]"
+            >
+              Tour Guide
+            </div>
+            <img
+              loading="lazy"
+              src="[##cms.cms.cdn##]/images/1.png"
+              alt="fisrt-img"
+              class="absolute top-0 img-dc left-0 z-0 w-52 h-52 rounded-full"
+            />
+            <img
+              loading="lazy"
+              src="[##cms.cms.cdn##]/images/2.png"
+              alt="fisrt-img"
+              class="absolute top-[174px] right-5n z-0 w-40 h-40 rounded-full"
+            />
+            <img
+              loading="lazy"
+              src="[##cms.cms.cdn##]/images/3.png"
+              alt="fisrt-img"
+              class="absolute image-absd z-0 w-24 h-24 rounded-full"
+            />
+            <img
+              loading="lazy"
+              src="[##cms.cms.cdn##]/images/img-love.png-removebg-preview.png"
+              alt="customer-service"
+              class="w-[270px] h-[249px]"
+              width="270"
+              height="249"
+            />
+          </div>
+          <div class="flex flex-col gap-[46px] 2xl:w-[658px]">
+            <h3 class="text-base">
+              Because more than 268 other customers have loved us too
+            </h3>
+            <basis core="print" datamembername="db.the-Notice">
+              <layout>
+                <div class="w-full grid grid-cols-1 gap-[21px]">@child</div>
+              </layout>
+              <face filter="RowNumber=1">
+                <a href="@link" class="flex group gap-[8px]">
+                  <span
+                    class="expshadow sceitem w-[64px] h-[64px] rounded-[16px] bg-white flex justify-center items-center"
+                  >
+                    <img
+                      loading="lazy"
+                      src="[##cms.cms.cdn##]/images/security.svg.png"
+                      alt="@title"
+                         width="42"
+                      height="52"
+                      class="w-[28px]"
+                  /></span>
+                  <div class="flex flex-col gap-[8px]">
+                    <p class="text-base line-clamp-1">@title</p>
+                    <p class="text-sm text-zinc-700 line-clamp-3 w-[220px]">
+                      @prp_7244
+                    </p>
+                    <div
+                      class="flex text-sm group-hover:text-primary-400 group text-zinc-800 items-center"
+                    >
+                      Learn More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                      >
+                        <path
+                          d="M23.5013 28.0847L27.5847 24.0013M27.5847 24.0013L23.5013 19.918M27.5847 24.0013H19.418"
+                          stroke="#27272A"
+                          class="group-hover:stroke-secondary-800"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </face>
+              <face filter="RowNumber=2">
+                <a href="@link" class="group flex gap-[8px]">
+                  <span
+                    class="expshadow sceitem w-[64px] h-[64px] rounded-[16px] bg-white flex justify-center items-center"
+                  >
+                    <img
+                      loading="lazy"
+                      src="[##cms.cms.cdn##]/images/support.svg.png"
+                      alt="@title"
+                       width="55" 
+                      height="55"
+                      class="w-[36px]"
+                  /></span>
+                  <div class="flex flex-col gap-[8px]">
+                    <p class="text-base line-clamp-1">@title</p>
+                    <p class="text-sm text-zinc-700 line-clamp-3 w-[220px]">
+                      @prp_7244
+                    </p>
+                    <div 
+                      class="flex text-sm group-hover:text-primary-400 group text-zinc-800 items-center"
+                    >
+                      Learn More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                      >
+                        <path
+                          d="M23.5013 28.0847L27.5847 24.0013M27.5847 24.0013L23.5013 19.918M27.5847 24.0013H19.418"
+                          stroke="#27272A"
+                          class="group-hover:stroke-secondary-800"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </face>
+              <face filter="RowNumber=3">
+                <a href="@link" class="group flex gap-[8px]">
+                  <span
+                    class="expshadow sceitem w-[64px] h-[64px] rounded-[16px] bg-white flex justify-center items-center"
+                  >
+                    <img
+                      loading="lazy"
+                      src="[##cms.cms.cdn##]/images/policy.svg.png"
+                      alt="@title"
+                      width="54"
+                      height="52"
+                      class="w-[36px]"
+                  /></span>
+                  <div class="flex flex-col gap-[8px]">
+                    <p class="text-base line-clamp-1">@title</p>
+                    <p class="text-sm text-zinc-700 line-clamp-3 w-[220px]">
+                      @prp_7244
+                    </p>
+                    <div
+                     
+                      class="flex  text-sm group-hover:text-primary-400 group text-zinc-800 items-center"
+                    >
+                      Learn More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                      >
+                        <path
+                          d="M23.5013 28.0847L27.5847 24.0013M27.5847 24.0013L23.5013 19.918M27.5847 24.0013H19.418"
+                          stroke="#27272A"
+                          class="group-hover:stroke-secondary-800"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </face>
+              <face filter="RowNumber=4">
+                <a href="@link" class="flex group gap-[8px]">
+                  <span
+                    class="expshadow sceitem w-[64px] h-[64px] rounded-[16px] bg-white flex justify-center items-center"
+                  >
+                    <img
+                      loading="lazy"
+                      src="[##cms.cms.cdn##]/images/repu.svg.png"
+                      alt="@title"
+                      width="49"
+                      height="49"
+                      class="w-[36px]"
+                  /></span>
+                  <div class="flex flex-col gap-[8px]">
+                    <p class="text-base line-clamp-1">@title</p>
+                    <p class="text-sm text-zinc-700 line-clamp-3 w-[220px]">
+                      @prp_7244
+                    </p>
+                    <div
+                      class="flex text-sm hover:text-secondary-800 group text-zinc-800 items-center"
+                    >
+                      Learn More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                      >
+                        <path
+                          d="M23.5013 28.0847L27.5847 24.0013M27.5847 24.0013L23.5013 19.918M27.5847 24.0013H19.418"
+                          stroke="#27272A"
+                          class="group-hover:stroke-secondary-800"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </face>
+            </basis>
+          </div>
+        </div>
+        <img
+          loading="lazy"
+          src="[##cms.cms.cdn##]/images/patrik.png"
+          alt="stars"
+          class="absolute w-[193px] bottom-5"
+        />
+      </section>
+
+      <section class="w-full relative flex justify-center items-center">
+        <div
+          class="px-5 xl:!px-0 py-16 lg:px-5 w-full gap-5 flex-col-reverse items-center flex xl:w-[1280px]"
+        >
+          <div class="flex flex-col w-full gap-6">
+            <basis core="print" datamembername="db.about-us-article">
+              <face filter="TypeID=150">
+                <p class="text-base text-primary-900">@text :</p>
+              </face>
+            </basis>
+            <basis core="print" datamembername="db.about-us-article">
+              <face filter="TypeID=129">
+                <div class="text-xs text-zinc-900">@largetext</div>
+              </face>
+            </basis>
+          </div>
+          <div class="grid grid-cols-1 gap-3 w-full">
+            <basis core="print" datamembername="db.gallery">
+              <face>
+                <img
+                  loading="lazy"
+                  src="@largeIMG"
+                  alt="@name"
+                  width="270"
+                  height="248"
+                  class="rounded-2xl h-[248px] w-full"
+                />
+              </face>
+            </basis>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="[##cms.cms.cdn##]/_js/swiper-bundle.11.2.5.min.js "></script>
+
+    <basis core="call" file="footer.inc" lid="2" />
+  </body>
+</html>

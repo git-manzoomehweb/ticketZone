@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ticketZone</title>
+    <link rel="stylesheet" href="../../output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.basiscore.net/basisfly.com/css/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <header class="flex flex-col gap-0 w-full">
+      <div
+        class="header-top w-full hidden lg:!flex justify-center h-[43px] bg-primary-950"
+      >
+        <div
+          class="px-5 w-full gap-[29px] flex-row-reverse lg:px-5 xl:w-[1280px] items-center xl:!px-0 flex !text-white"
+        >
+          <a href="" class="text-sm hover:text-secondary-500">Language</a
+          ><a href="" class="text-sm hover:text-secondary-500"
+            >Login or Creat acount</a
+          >
+          <p class="text-sm hover:text-secondary-500">24/7 Support</p>
+        </div>
+      </div>
+      <div
+        class="header-bottom lg:!h-[100px] lg:!bg-primary-800 bg-primary-950 flex items-center justify-center"
+      >
+        <div
+          class="xl:!px-0 lg:px-5 w-full justify-between xl:w-[1280px] items-center flex max-sm:flex-wrap !text-white"
+        >
+          <div
+            class="lg:!w-fit w-full lg:!py-0 py-4 max-sm:px-5 flex justify-between items-center"
+          >
+            <a href="/" class="hover:scale-110">
+              <img
+                src="../../images/logo.png"
+                alt="logo"
+                aria-label="logo"
+                class="lg:!w-[198.28px] lg:!h-[28px] w-[74px] h-[10px]"
+                width="198.28"
+                height="28"
+              />
+            </a>
+            <button class="bars3 lg:!hidden">
+              <svg
+                width="24"
+                height="26"
+                viewBox="0 0 24 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.75 20.7656C3.75 20.3514 4.08579 20.0156 4.5 20.0156H20.5C20.9142 20.0156 21.25 20.3514 21.25 20.7656C21.25 21.1798 20.9142 21.5156 20.5 21.5156H4.5C4.08579 21.5156 3.75 21.1798 3.75 20.7656Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.75 6.76562C3.75 6.35142 4.08579 6.01562 4.5 6.01562H20.5C20.9142 6.01562 21.25 6.35142 21.25 6.76562C21.25 7.17984 20.9142 7.51562 20.5 7.51562H4.5C4.08579 7.51562 3.75 7.17984 3.75 6.76562Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.75 13.7656C3.75 13.3514 4.08579 13.0156 4.5 13.0156H20.5C20.9142 13.0156 21.25 13.3514 21.25 13.7656C21.25 14.1798 20.9142 14.5156 20.5 14.5156H4.5C4.08579 14.5156 3.75 14.1798 3.75 13.7656Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="lg:!w-fit max-sm:bg-primary-800 max-sm:px-5 w-full lg:!py-0 py-2 flex justify-between items-center gap-[4px]"
+          >
+            <a
+              href="/"
+              class="w-[80px] gap-[4px] group hover:bg-secondary-900 hover:shadow-inner h-[84px] bg-transparent rounded-lg flex flex-col justify-center items-center"
+            >
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.7022 37.16V32.5734C19.7022 31.4026 20.6583 30.4535 21.8377 30.4535H26.1489C26.7153 30.4535 27.2585 30.6768 27.6589 31.0744C28.0594 31.472 28.2844 32.0112 28.2844 32.5734V37.16C28.2808 37.6468 28.4731 38.1148 28.8186 38.4603C29.164 38.8057 29.6341 39 30.1244 39H33.0657C34.4395 39.0035 35.7581 38.4643 36.7308 37.5012C37.7034 36.5382 38.25 35.2305 38.25 33.8667V20.8003C38.25 19.6987 37.7581 18.6538 36.9069 17.947L26.901 10.0138C25.1605 8.62284 22.6667 8.66775 20.9781 10.1205L11.2005 17.947C10.3091 18.6329 9.77633 19.681 9.75 20.8003V33.8534C9.75 36.6958 12.0711 39 14.9343 39H17.8084C18.8268 39 19.6545 38.1843 19.6619 37.1733L19.7022 37.16Z"
+                  fill="white"
+                />
+              </svg>
+
+              Home
+            </a>
+            <div
+              class="w-[80px] gap-[4px] cursor-pointer group hover:bg-secondary-900 hover:shadow-inner h-[84px] bg-transparent rounded-lg flex flex-col justify-center items-center"
+            >
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M37.791 23.5656C36.5145 22.056 34.323 21.7837 33.4395 21.7363C31.8885 21.6549 30.327 21.6712 28.8165 21.686L28.1625 21.6312C27.1545 19.4453 26.0985 17.2756 25.035 15.1266C24.318 13.6555 23.2905 12.8016 21.993 12.5899C21.2655 12.4656 20.541 12.4419 19.8405 12.4197C19.542 12.4108 19.239 12.402 18.93 12.3842C18.627 12.3694 18.3225 12.473 18.096 12.6817C17.871 12.8889 17.742 13.179 17.739 13.4838L17.6715 21.5987C16.764 21.5942 15.6945 21.6001 14.6265 21.6016C13.5705 21.6046 12.5175 21.6075 11.631 21.6061C11.634 21.1428 11.637 20.6367 11.64 20.3821C11.6445 19.7694 11.145 19.2914 10.524 19.2869C9.882 19.2662 9.3945 19.7975 9.39 20.4102C9.3855 20.8291 9.375 22.1477 9.375 22.4941C9.39 27.0584 12.1185 29.8349 16.671 29.9192C22.0065 30.0184 27.252 30.0391 33.4845 30.0391C35.7165 30.0391 38.265 28.8965 38.5905 26.3894C38.7285 25.3223 38.451 24.347 37.791 23.5656Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M34.1322 35.9727H13.8672C13.2462 35.9727 12.7422 36.4699 12.7422 37.0827C12.7422 37.6954 13.2462 38.1927 13.8672 38.1927H34.1322C34.7532 38.1927 35.2572 37.6954 35.2572 37.0827C35.2572 36.4699 34.7532 35.9727 34.1322 35.9727Z"
+                  fill="white"
+                />
+              </svg>
+
+              Flight
+            </div>
+            <div
+              class="w-[80px] gap-[4px] cursor-pointer group hover:bg-secondary-900 hover:shadow-inner h-[84px] bg-transparent rounded-lg flex flex-col justify-center items-center"
+            >
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.9297 21.9647H16.2567C16.4224 21.9647 16.5559 21.8303 16.5545 21.6647C16.5511 21.2649 16.556 20.8565 16.6872 20.4796C16.9182 19.8391 17.4117 19.3456 18.0447 19.1191C18.4152 18.9856 18.7887 18.9856 19.4667 18.9856H20.3967C21.0761 18.9856 21.4511 18.9856 21.8201 19.1206C22.4516 19.3456 22.9451 19.8391 23.1731 20.4706C23.3054 20.8511 23.3116 21.2618 23.3087 21.6647C23.3075 21.8303 23.441 21.9647 23.6066 21.9647H24.5066C24.6724 21.9647 24.8059 21.8303 24.8045 21.6647C24.8011 21.2649 24.806 20.8565 24.9371 20.4796C25.1681 19.8391 25.6616 19.3456 26.2946 19.1191C26.6651 18.9856 27.0386 18.9856 27.7166 18.9856H28.6466C29.3261 18.9856 29.7011 18.9856 30.0701 19.1206C30.7016 19.3456 31.1951 19.8391 31.4231 20.4706C31.5554 20.8511 31.5616 21.2618 31.5587 21.6647C31.5575 21.8303 31.691 21.9647 31.8566 21.9647H35.1851C35.6006 21.9647 35.9351 21.6287 35.9351 21.2147V16.3936C35.9351 15.2371 35.9351 14.6566 35.7371 14.1046C35.3951 13.1566 34.6541 12.4186 33.7181 12.0841C33.1571 11.8711 32.5736 11.8711 31.4081 11.8711H16.7082C15.5427 11.8711 14.9592 11.8711 14.4132 12.0796C13.4622 12.4186 12.7212 13.1566 12.3792 14.1046C12.1797 14.6551 12.1797 15.2371 12.1797 16.3936V21.2147C12.1797 21.6287 12.5157 21.9647 12.9297 21.9647Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M38.4752 25.7159C38.1257 24.7379 37.3577 23.9609 36.3347 23.5739C35.7632 23.3789 35.1722 23.3789 34.1012 23.3789H14.0131C12.9421 23.3789 12.3526 23.3789 11.7466 23.5874C10.7596 23.9609 9.99309 24.7364 9.64359 25.7084C9.43359 26.2844 9.43359 26.8769 9.43359 27.9539V35.0039C9.43359 35.6249 9.93759 36.1289 10.5586 36.1289C11.1796 36.1289 11.6836 35.6249 11.6836 35.0039V34.5689C11.6836 34.4032 11.8179 34.2689 11.9836 34.2689H36.1337C36.2993 34.2689 36.4337 34.4032 36.4337 34.5689V35.0039C36.4337 35.6249 36.9377 36.1289 37.5587 36.1289C38.1797 36.1289 38.6837 35.6249 38.6837 35.0039V27.9539C38.6837 26.8769 38.6837 26.2844 38.4752 25.7159Z"
+                  fill="white"
+                />
+              </svg>
+
+              Hotel
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav
+      class="fixed z-40 header-menu translate-x-[1000px] w-screen py-9 overflow-scroll px-5 h-screen bg-primary-800 lg:!hidden transition-all duration-300 ease-in-out top-0 flex flex-col gap-6"
+    >
+      <div class="w-full flex justify-between items-center">
+        <a href="/" class="hover:scale-110">
+          <img
+            src="../../images/logo.png"
+            alt="logo"
+            aria-label="logo"
+            class="lg:!w-[198.28px] lg:!h-[28px] w-[74px] h-[10px]"
+            width="198.28"
+            height="28"
+          />
+        </a>
+        <button class="header-menu-close">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.334 0C17.723 0 20 2.378 20 5.916V14.084C20 17.622 17.723 20 14.333 20H5.665C2.276 20 0 17.622 0 14.084V5.916C0 2.378 2.276 0 5.665 0H14.334ZM14.334 1.5H5.665C3.135 1.5 1.5 3.233 1.5 5.916V14.084C1.5 16.767 3.135 18.5 5.665 18.5H14.333C16.864 18.5 18.5 16.767 18.5 14.084V5.916C18.5 3.233 16.864 1.5 14.334 1.5ZM8.1305 7.0626L9.998 8.93L11.8645 7.0647C12.1575 6.7717 12.6315 6.7717 12.9245 7.0647C13.2175 7.3577 13.2175 7.8317 12.9245 8.1247L11.058 9.99L12.9265 11.8596C13.2195 12.1526 13.2195 12.6266 12.9265 12.9196C12.7805 13.0666 12.5875 13.1396 12.3965 13.1396C12.2045 13.1396 12.0125 13.0666 11.8665 12.9196L9.998 11.05L8.1325 12.9167C7.9865 13.0637 7.7945 13.1367 7.6025 13.1367C7.4105 13.1367 7.2185 13.0637 7.0725 12.9167C6.7795 12.6237 6.7795 12.1497 7.0725 11.8567L8.938 9.99L7.0705 8.1226C6.7775 7.8296 6.7775 7.3556 7.0705 7.0626C7.3645 6.7696 7.8385 6.7696 8.1305 7.0626Z"
+              fill="#fff"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        class="flex w-full !text-white flex-col justify-center items-center gap-20 mt-8"
+      >
+        <a href="" class="text-sm hover:text-secondary-500">Language</a
+        ><a href="" class="text-sm hover:text-secondary-500"
+          >Login or Creat acount</a
+        >
+        <p class="text-sm hover:text-secondary-500">24/7 Support</p>
+      </div>
+    </nav>
+    <main>
+      <h1 class="sr-only">ticket Zone</h1>
+      <section
+        class="w-full px-5 bg-primary-900 min-h-[605px] flex flex-col items-center justify-center"
+      >
+        <div class="flex flex-col gap-4 justify-center">
+          <h2 class="text-white text-center text-base font-bold">
+            Explore Your World with Ticket zone
+          </h2>
+          <p class="text-white text-sm text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas
+            purus viverra accumsan in nisl nis
+          </p>
+        </div>
+        <div class="h-[324px]"></div>
+      </section>
+      <section
+        class="w-full bg-[#E0F6FF] relative flex justify-center pt-7 pb-[140px] items-center"
+      >
+        <div
+          class="xl:!px-0 px-5 lg:px-5 w-full gap-5 flex flex-col xl:w-[1280px]"
+        >
+          <div class="relative w-full">
+            <!-- <div
+              class="absolute bg-white right-[70px] px-2 top-[4.6rem] rounded-xl py-1 text-xl font-bold"
+            >
+              +01 235 368
+            </div> -->
+            <img
+              src="../../images/img-love.png.png"
+              alt="customer-service"
+              class="w-full"
+            />
+          </div>
+          <div class="flex flex-col gap-[46px] 2xl:w-[658px]">
+            <h3 class="text-base">
+              Because more than 268 other customers have loved us too
+            </h3>
+            <div class="w-full grid grid-cols-1 gap-[21px]">
+              <article class="flex gap-[8px]">
+                <span
+                  class="expshadow sceitem w-[64px] h-[64px] rounded-[16px] bg-white flex justify-center items-center"
+                >
+                  <img
+                    src="../../images/security.svg.png"
+                    alt="security"
+                    class="w-[28px]"
+                /></span>
+                <div class="flex flex-col gap-[8px]">
+                  <p class="text-base line-clamp-1">Security Assurance</p>
+                  <p class="text-sm text-zinc-700 line-clamp-3 w-[220px]">
+                    Demonstrates commitment to user data security through
+                    encryption and secure payment practices
+                  </p>
+                  <a
+                    href=""
+                    class="flex text-sm hover:text-secondary-800 group text-zinc-800 items-center"
+                  >
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.5013 28.0847L27.5847 24.0013M27.5847 24.0013L23.5013 19.918M27.5847 24.0013H19.418"
+                        stroke="#27272A"
+                        class="group-hover:stroke-secondary-800"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="flex gap-[8px]">
+                <span
+                  class="expshadow sceitem w-[64px] h-[64px] rounded-[16px] bg-white flex justify-center items-center"
+                >
+                  <img
+                    src="../../images/support.svg.png"
+                    alt="support"
+                    class="w-[36px]"
+                /></span>
+                <div class="flex flex-col gap-[8px]">
+                  <p class="text-base line-clamp-1">Customer Support</p>
+                  <p class="text-sm text-zinc-700 line-clamp-3 w-[220px]">
+                    Demonstrates commitment to user data security through
+                    encryption and secure payment practices
+                  </p>
+                  <a
+                    href=""
+                    class="flex text-sm hover:text-secondary-800 group text-zinc-800 items-center"
+                  >
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.5013 28.0847L27.5847 24.0013M27.5847 24.0013L23.5013 19.918M27.5847 24.0013H19.418"
+                        stroke="#27272A"
+                        class="group-hover:stroke-secondary-800"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="flex gap-[8px]">
+                <span
+                  class="expshadow sceitem w-[64px] h-[64px] rounded-[16px] bg-white flex justify-center items-center"
+                >
+                  <img
+                    src="../../images/policy.svg.png"
+                    alt="policy"
+                    class="w-[36px]"
+                /></span>
+                <div class="flex flex-col gap-[8px]">
+                  <p class="text-base line-clamp-1">Transparent Policies</p>
+                  <p class="text-sm text-zinc-700 line-clamp-3 w-[220px]">
+                    Demonstrates commitment to user data security through
+                    encryption and secure payment practices
+                  </p>
+                  <a
+                    href=""
+                    class="flex text-sm hover:text-secondary-800 group text-zinc-800 items-center"
+                  >
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.5013 28.0847L27.5847 24.0013M27.5847 24.0013L23.5013 19.918M27.5847 24.0013H19.418"
+                        stroke="#27272A"
+                        class="group-hover:stroke-secondary-800"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="flex gap-[8px]">
+                <span
+                  class="expshadow sceitem w-[64px] h-[64px] rounded-[16px] bg-white flex justify-center items-center"
+                >
+                  <img
+                    src="../../images/repu.svg.png"
+                    alt="repu"
+                    class="w-[36px]"
+                /></span>
+                <div class="flex flex-col gap-[8px]">
+                  <p class="text-base line-clamp-1">Reputable Affiliations</p>
+                  <p class="text-sm text-zinc-700 line-clamp-3 w-[220px]">
+                    Demonstrates commitment to user data security through
+                    encryption and secure payment practices
+                  </p>
+                  <a
+                    href=""
+                    class="flex text-sm hover:text-secondary-800 group text-zinc-800 items-center"
+                  >
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.5013 28.0847L27.5847 24.0013M27.5847 24.0013L23.5013 19.918M27.5847 24.0013H19.418"
+                        stroke="#27272A"
+                        class="group-hover:stroke-secondary-800"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <img
+          src="../../images/patrik.png"
+          alt="stars"
+          class="absolute w-[193px] bottom-5"
+        />
+      </section>
+
+      <section
+        class="w-full bg-[#F1FBFF] relative flex justify-center py-9 items-center"
+      >
+        <div class="xl:!px-0 lg:px-5 w-full flex-col gap-5 flex xl:w-[1280px]">
+          <h4 class="text-base pl-5">News</h4>
+          <div class="w-full ml-3 overflow-hidden py-6">
+            <div class="w-full swiper-mobile">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <article class="flex flex-col gap-[8px] px-2">
+                    <img
+                      width="235"
+                      height="234"
+                      src="../../images/person-news.png"
+                      alt=""
+                      class="shadow1 w-full h-[200px] rounded-[15px]"
+                    />
+                    <div class="flex flex-col w-full">
+                      <p class="text-base">Business & Holiday Travel</p>
+                      <div class="line-clamp-5 text-sm text-zinc-500">
+                        Whether you're traveling solo, with a partner, or with a
+                        group, we are committed to providing you with a
+                        stress-free and unforgettable travel experience. So why
+                        wait? Contact us today to start planning your next
+                        adventure! Handyman services are an ideal solution for
+                        busy homeowners
+                      </div>
+                      <a
+                        href=""
+                        class="tzone-btn group mt-3 bg-transparent justify-center items-center cursor-pointer w-[140px] flex h-[49px] relative"
+                      >
+                        <div
+                          class="w-full z-0 h-full hover:bg-primary-700 bg-secondary-900 text-white rounded-lg flex justify-center items-center"
+                        >
+                          Viwe More
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="flex flex-col gap-[8px] px-2">
+                    <img
+                      width="235"
+                      height="234"
+                      src="../../images/person-news.png"
+                      alt=""
+                      class="shadow1 w-full h-[200px] rounded-[15px]"
+                    />
+                    <div class="flex flex-col w-full">
+                      <p class="text-base">Business & Holiday Travel</p>
+                      <div class="line-clamp-5 text-sm text-zinc-500">
+                        Whether you're traveling solo, with a partner, or with a
+                        group, we are committed to providing you with a
+                        stress-free and unforgettable travel experience. So why
+                        wait? Contact us today to start planning your next
+                        adventure! Handyman services are an ideal solution for
+                        busy homeowners
+                      </div>
+                      <a
+                        href=""
+                        class="tzone-btn group mt-3 bg-transparent justify-center items-center cursor-pointer w-[140px] flex h-[49px] relative"
+                      >
+                        <div
+                          class="w-full z-0 h-full hover:bg-primary-700 bg-secondary-900 text-white rounded-lg flex justify-center items-center"
+                        >
+                          Viwe More
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="w-full bg-[#FDFEFF] border-b-2 border-[#f2f4f6] relative flex justify-center pb-9 pt-20 items-center"
+      >
+        <div
+          class="px-5 xl:!px-0 lg:px-5 w-full flex-col gap-5 flex xl:w-[1280px]"
+        >
+          <div class="flex z-[2] w-full flex-col gap-2">
+            <h5 class="text-[18px] text-center">Frequently Asked Questions</h5>
+            <p class="text-xs text-zinc-700 text-center">
+              You need to come at least once in your life
+            </p>
+          </div>
+          <ul class="flex bg-[#FDFEFF] z-[1] flex-col gap-[8px] my-4">
+            <li
+              class="flex text-sm w-fit items-center hover:bg-primary-100 hover:border-primary-100 cursor-pointer group h-[48px] px-[12px] rounded-lg border border-zinc-200 bg-transparent gap-[4px]"
+            >
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M33.183 22.8508H30.5179V20.714C30.5179 20.3251 30.2025 20.0099 29.8135 20.0099H26.0067C25.6537 18.9325 24.637 18.1596 23.4551 18.1596H22.2332V12.7042C22.2332 12.3153 21.9179 12 21.5289 12H16.6108C16.2218 12 15.9064 12.3153 15.9064 12.7042V18.1597H14.6846C13.2043 18.1597 12 19.3636 12 20.8435V33.3161C12 34.796 13.2043 36 14.6846 36H33.183C34.7363 36 36 34.7366 36 33.1838V25.667C36 24.1141 34.7363 22.8508 33.183 22.8508ZM34.5914 25.667V30.1203H20.6642V25.667C20.6642 24.8907 21.296 24.259 22.0726 24.259H33.183C33.9596 24.259 34.5914 24.8906 34.5914 25.667ZM29.1092 22.8508H26.1464V21.4182H29.1092V22.8508ZM17.3151 13.4083H20.8246V18.1596H17.3151V13.4083ZM13.4086 33.3161V20.8435C13.4086 20.1401 13.981 19.5679 14.6846 19.5679H23.4551C24.1261 19.5679 24.6855 20.0915 24.7283 20.7599C24.73 20.7859 24.7333 20.8115 24.7377 20.8366V22.8508H22.0725C20.5192 22.8508 19.2555 24.1141 19.2555 25.667V33.1838C19.2555 33.6965 19.394 34.1772 19.6344 34.5917H14.6846C13.981 34.5917 13.4086 34.0195 13.4086 33.3161ZM33.183 34.5917H23.4551H22.0726C21.296 34.5917 20.6642 33.9601 20.6642 33.1838V31.5286H34.5914V33.1838C34.5914 33.9601 33.9596 34.5917 33.183 34.5917Z"
+                  fill="#FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+              </svg>
+              Holidays
+            </li>
+
+            <li
+              class="flex w-fit text-sm items-center hover:bg-primary-100 hover:border-primary-100 cursor-pointer group h-[48px] px-[12px] rounded-lg border border-zinc-200 bg-transparent gap-[4px]"
+            >
+              <svg
+                width="18"
+                height="24"
+                viewBox="0 0 18 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.6719 11.0625V0.703125C17.6719 0.314812 17.3571 0 16.9688 0H1.03125C0.642937 0 0.328125 0.314812 0.328125 0.703125V11.0625C0.328125 11.249 0.402234 11.4278 0.534094 11.5597L0.974391 12L0.534094 12.4403C0.402234 12.5722 0.328125 12.751 0.328125 12.9375V23.2969C0.328125 23.6852 0.642937 24 1.03125 24H16.9688C17.3571 24 17.6719 23.6852 17.6719 23.2969V12.9375C17.6719 12.751 17.5978 12.5722 17.4659 12.4403L17.0256 12L17.466 11.5597C17.5978 11.4278 17.6719 11.249 17.6719 11.0625ZM16.2656 10.7713L15.5341 11.5028C15.2595 11.7774 15.2595 12.2226 15.5341 12.4972L16.2656 13.2287V22.5938H1.73438V13.2287L2.46591 12.4972C2.7405 12.2226 2.7405 11.7774 2.46591 11.5028L1.73438 10.7713V1.40625H16.2656V10.7713Z"
+                  fill=" #FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M4.32646 7.58176L5.43553 8.5652C5.66198 8.76601 5.99151 8.79934 6.25359 8.64803L9.58125 6.72681L9.44826 8.78893C9.42328 9.17645 9.71718 9.51085 10.1047 9.53589C10.4922 9.56092 10.8266 9.26696 10.8517 8.87945L11.045 5.88179L13.5607 4.42932C13.897 4.23517 14.0122 3.80514 13.818 3.46885C13.6238 3.13253 13.1939 3.01735 12.8576 3.21151L10.3418 4.66398L7.64911 3.33259C7.30096 3.16051 6.87932 3.30315 6.70715 3.65124C6.53503 3.99934 6.67771 4.42107 7.02581 4.5932L8.87812 5.50909L5.98935 7.1769L5.25946 6.52965C4.96893 6.27207 4.52456 6.2987 4.26689 6.58923C4.00926 6.87971 4.03593 7.32409 4.32646 7.58176Z"
+                  fill=" #FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M3.84376 15.5625H14.1562C14.5446 15.5625 14.8594 15.2477 14.8594 14.8594C14.8594 14.4711 14.5446 14.1562 14.1562 14.1562H3.84376C3.45545 14.1562 3.14062 14.4711 3.14062 14.8594C3.14062 15.2477 3.45545 15.5625 3.84376 15.5625Z"
+                  fill=" #FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M3.84376 18.375H9C9.38831 18.375 9.70312 18.0602 9.70312 17.6719C9.70312 17.2836 9.38831 16.9688 9 16.9688H3.84376C3.45545 16.9688 3.14062 17.2836 3.14062 17.6719C3.14062 18.0602 3.45545 18.375 3.84376 18.375Z"
+                  fill=" #FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M3.84376 21.1875H9C9.38831 21.1875 9.70312 20.8727 9.70312 20.4844C9.70312 20.0961 9.38831 19.7812 9 19.7812H3.84376C3.45545 19.7812 3.14062 20.0961 3.14062 20.4844C3.14062 20.8727 3.45545 21.1875 3.84376 21.1875Z"
+                  fill=" #FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M4.78125 12.7031H5.71875C6.10706 12.7031 6.42188 12.3883 6.42188 12C6.42188 11.6117 6.10706 11.2969 5.71875 11.2969H4.78125C4.39294 11.2969 4.07812 11.6117 4.07812 12C4.07812 12.3883 4.39294 12.7031 4.78125 12.7031Z"
+                  fill=" #FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M9.46875 11.2969H8.53125C8.14294 11.2969 7.82812 11.6117 7.82812 12C7.82812 12.3883 8.14294 12.7031 8.53125 12.7031H9.46875C9.85706 12.7031 10.1719 12.3883 10.1719 12C10.1719 11.6117 9.85706 11.2969 9.46875 11.2969Z"
+                  fill=" #FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M13.2188 11.2969H12.2812C11.8929 11.2969 11.5781 11.6117 11.5781 12C11.5781 12.3883 11.8929 12.7031 12.2812 12.7031H13.2188C13.6071 12.7031 13.9219 12.3883 13.9219 12C13.9219 11.6117 13.6071 11.2969 13.2188 11.2969Z"
+                  fill=" #FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M12.75 16.9688C11.5869 16.9688 10.6406 17.915 10.6406 19.0781C10.6406 20.2412 11.5869 21.1875 12.75 21.1875C13.9131 21.1875 14.8594 20.2412 14.8594 19.0781C14.8594 17.915 13.9131 16.9688 12.75 16.9688ZM12.75 19.7812C12.3623 19.7812 12.0469 19.4658 12.0469 19.0781C12.0469 18.6904 12.3623 18.375 12.75 18.375C13.1377 18.375 13.4531 18.6904 13.4531 19.0781C13.4531 19.4658 13.1377 19.7812 12.75 19.7812Z"
+                  fill=" #FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+              </svg>
+
+              Tickets Booking
+            </li>
+
+            <li
+              class="flex w-fit text-sm items-center hover:bg-primary-100 hover:border-primary-100 cursor-pointer group h-[48px] px-[12px] rounded-lg border border-zinc-200 bg-transparent gap-[4px]"
+            >
+              <svg
+                width="23"
+                height="24"
+                viewBox="0 0 23 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.3574 8.29719H18.2259V5.1146C18.2259 4.72631 17.9111 4.41151 17.5228 4.41151H16.8197V2.78464C16.8197 1.24917 15.5705 0 14.035 0H8.96301C7.4275 0 6.17833 1.24917 6.17833 2.78464V4.41146H5.47523C5.08694 4.41146 4.77214 4.72626 4.77214 5.11456V8.29714H1.64059C1.2523 8.29714 0.9375 8.61194 0.9375 9.00024V23.2969C0.9375 23.6852 1.2523 24 1.64059 24H21.3574C21.7457 24 22.0605 23.6852 22.0605 23.2969V9.00029C22.0605 8.61199 21.7457 8.29719 21.3574 8.29719ZM7.58452 2.78464C7.58452 2.02454 8.20292 1.40619 8.96301 1.40619H14.035C14.7951 1.40619 15.4135 2.02454 15.4135 2.78464V4.41146H7.58452V2.78464ZM16.8197 5.81765V22.5938H15.3081V19.1664C15.3081 18.7781 14.9933 18.4633 14.605 18.4633H8.39299C8.00469 18.4633 7.68989 18.7781 7.68989 19.1664V22.5938H6.17833V5.81765H16.8197ZM12.2021 19.8695H13.9019V22.5938H12.2021V19.8695ZM10.7959 22.5938H9.09604V19.8695H10.7959V22.5938ZM2.34369 9.70338H4.77214V22.5938H2.34369V9.70338ZM20.6543 22.5938H18.2259V9.70338H20.6543V22.5938Z"
+                  fill="#FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M13.9172 16.5059C14.0071 16.9904 14.5905 17.2317 14.9967 16.953C15.4875 16.6298 15.3745 15.8628 14.8106 15.6959C14.3105 15.5378 13.8089 15.9929 13.9172 16.5059Z"
+                  fill="#FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M11.0558 16.9113C11.511 17.2863 12.2053 16.9575 12.2047 16.368C12.2087 15.8431 11.6313 15.4962 11.1702 15.7479C10.7326 15.9738 10.6703 16.6046 11.0558 16.9113Z"
+                  fill="#FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M7.70287 16.5083C7.80074 17.0239 8.4355 17.2503 8.83814 16.9141C9.37024 16.4687 9.01447 15.6098 8.323 15.6711C7.9213 15.7018 7.61414 16.1149 7.70287 16.5083Z"
+                  fill="#FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M15.2971 13.4202C15.1985 12.9046 14.5649 12.6782 14.1618 13.0143C13.7056 13.3871 13.8917 14.1333 14.4702 14.247C14.9517 14.3512 15.4006 13.9016 15.2971 13.4202Z"
+                  fill="#FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M10.8116 13.6934C10.9027 14.1782 11.4845 14.4192 11.8916 14.1406C12.3822 13.8141 12.2703 13.053 11.7054 12.8834C11.2051 12.7254 10.7038 13.1799 10.8116 13.6934Z"
+                  fill="#FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M7.70632 13.6935C7.79618 14.178 8.37951 14.4193 8.78576 14.1406C9.2769 13.8147 9.16468 13.0525 8.59968 12.8835C8.09949 12.7254 7.5979 13.1803 7.70632 13.6935Z"
+                  fill="#FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M15.3064 10.6769C15.2587 10.1542 14.6511 9.86644 14.2166 10.1613C13.726 10.4843 13.8387 11.252 14.4028 11.4184C14.8721 11.5692 15.3616 11.166 15.3064 10.6769Z"
+                  fill="#FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M10.8116 10.8847C10.9025 11.3697 11.4845 11.6105 11.8916 11.3319C12.3823 11.0056 12.2701 10.2438 11.705 10.0748C11.2048 9.91677 10.7039 10.3718 10.8116 10.8847Z"
+                  fill="#FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M7.70633 10.881C7.79618 11.3656 8.37952 11.6069 8.78577 11.3281C9.27672 11.0024 9.1645 10.2401 8.59968 10.071C8.09964 9.91281 7.59786 10.368 7.70633 10.881Z"
+                  fill="#FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M13.9172 8.06839C14.007 8.55301 14.5906 8.79399 14.9967 8.51556C15.4873 8.19223 15.3745 7.42529 14.8106 7.25842C14.3105 7.10041 13.8089 7.55532 13.9172 8.06839Z"
+                  fill="#FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M10.8116 8.06841C10.9023 8.55275 11.4846 8.79428 11.891 8.51558C12.3825 8.19018 12.2702 7.42798 11.7054 7.25844C11.2049 7.10043 10.7041 7.55496 10.8116 8.06841Z"
+                  fill="#FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+                <path
+                  d="M7.70622 8.07229C7.79608 8.55695 8.37941 8.79788 8.78566 8.51946C9.27652 8.19641 9.1636 7.42909 8.59958 7.26232C8.09911 7.10436 7.59827 7.55898 7.70622 8.07229Z"
+                  fill="#FE6B22"
+                  class="group-hover:fill-primary-500"
+                />
+              </svg>
+
+              Hotels
+            </li>
+          </ul>
+          <div
+            class="common-qs bg-[#FDFEFF] z-[1] transition-all duration-300 ease-in-out w-full flex flex-col border border-[#E4E4E7] divide-y divide-[#E4E4E7]"
+          >
+            <div
+              class="box px-6 py-8 group items-center cursor-pointer flex w-full justify-between"
+            >
+              <div class="flex w-full flex-col gap-4">
+                <div class="w-full flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <span class="counter text-primary-900 text-[36px] font-bold"
+                      >01</span
+                    >
+                    <div class="flex flex-col w-[180px] gap-2">
+                      <div class="text-sm">
+                        What documents do I need for my trip, and how do I
+                        obtain them?
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="sign w-12 group-hover:bg-secondary-900 transition-all duration-300 ease-in-out h-12 rounded-lg flex justify-center items-center bg-primary-50"
+                  >
+                    <div
+                      class="w-[16.31px] transition-all duration-300 ease-in-out flex justify-center items-center h-[16.31px] relative"
+                    >
+                      <span class="absolute"
+                        ><svg
+                          width="18"
+                          height="3"
+                          viewBox="0 0 18 3"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 0.881792C9.50037 0.881792 9.20503 0.881792 9.5 0.881792L9.90625 0.881592H16.25C16.7504 0.881592 17.1562 1.28735 17.1562 1.78784C17.1562 2.06165 17.0347 2.30706 16.8429 2.47309C16.6843 2.61072 16.4766 2.69409 16.25 2.69409H9.90625H9.5C9.27734 2.69409 9.50037 2.69409 9 2.69409C8.49963 2.69409 8.60938 2.69409 8.35047 2.69409H8.09375H1.75C1.24968 2.69409 0.84375 2.28833 0.84375 1.78784C0.84375 1.28735 1.24968 0.881592 1.75 0.881592H8.09375L8.5 0.881777C8.84766 0.881607 8.49963 0.881792 9 0.881792Z"
+                            fill="#18181B"
+                            class="group-hover:fill-white"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span class="rotate-90 absolute"
+                        ><svg
+                          width="18"
+                          height="3"
+                          viewBox="0 0 18 3"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 0.881792C9.50037 0.881792 9.20503 0.881792 9.5 0.881792L9.90625 0.881592H16.25C16.7504 0.881592 17.1562 1.28735 17.1562 1.78784C17.1562 2.06165 17.0347 2.30706 16.8429 2.47309C16.6843 2.61072 16.4766 2.69409 16.25 2.69409H9.90625H9.5C9.27734 2.69409 9.50037 2.69409 9 2.69409C8.49963 2.69409 8.60938 2.69409 8.35047 2.69409H8.09375H1.75C1.24968 2.69409 0.84375 2.28833 0.84375 1.78784C0.84375 1.28735 1.24968 0.881592 1.75 0.881592H8.09375L8.5 0.881777C8.84766 0.881607 8.49963 0.881792 9 0.881792Z"
+                            fill="#18181B"
+                            class="group-hover:fill-white"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="answer" class="text-sm text-[#737373] hidden">
+                  Provide a step-by-step guide on how users can browse and book
+                  travel services on your platform. Include information on
+                  searching for destinations, selecting dates, choosing
+                  accommodation, and completing the booking process. Mention any
+                  special features or tools that can help users find the best
+                  deals.
+                </div>
+              </div>
+            </div>
+            <div
+              class="box px-6 py-8 group items-center cursor-pointer flex w-full justify-between"
+            >
+              <div class="flex w-full flex-col gap-4">
+                <div class="w-full flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <span class="counter text-primary-900 text-[36px] font-bold"
+                      >01</span
+                    >
+                    <div class="flex flex-col w-[180px] gap-2">
+                      <div class="text-sm">
+                        What documents do I need for my trip, and how do I
+                        obtain them?
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="sign w-12 group-hover:bg-secondary-900 transition-all duration-300 ease-in-out h-12 rounded-lg flex justify-center items-center bg-primary-50"
+                  >
+                    <div
+                      class="w-[16.31px] transition-all duration-300 ease-in-out flex justify-center items-center h-[16.31px] relative"
+                    >
+                      <span class="absolute"
+                        ><svg
+                          width="18"
+                          height="3"
+                          viewBox="0 0 18 3"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 0.881792C9.50037 0.881792 9.20503 0.881792 9.5 0.881792L9.90625 0.881592H16.25C16.7504 0.881592 17.1562 1.28735 17.1562 1.78784C17.1562 2.06165 17.0347 2.30706 16.8429 2.47309C16.6843 2.61072 16.4766 2.69409 16.25 2.69409H9.90625H9.5C9.27734 2.69409 9.50037 2.69409 9 2.69409C8.49963 2.69409 8.60938 2.69409 8.35047 2.69409H8.09375H1.75C1.24968 2.69409 0.84375 2.28833 0.84375 1.78784C0.84375 1.28735 1.24968 0.881592 1.75 0.881592H8.09375L8.5 0.881777C8.84766 0.881607 8.49963 0.881792 9 0.881792Z"
+                            fill="#18181B"
+                            class="group-hover:fill-white"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span class="rotate-90 absolute"
+                        ><svg
+                          width="18"
+                          height="3"
+                          viewBox="0 0 18 3"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 0.881792C9.50037 0.881792 9.20503 0.881792 9.5 0.881792L9.90625 0.881592H16.25C16.7504 0.881592 17.1562 1.28735 17.1562 1.78784C17.1562 2.06165 17.0347 2.30706 16.8429 2.47309C16.6843 2.61072 16.4766 2.69409 16.25 2.69409H9.90625H9.5C9.27734 2.69409 9.50037 2.69409 9 2.69409C8.49963 2.69409 8.60938 2.69409 8.35047 2.69409H8.09375H1.75C1.24968 2.69409 0.84375 2.28833 0.84375 1.78784C0.84375 1.28735 1.24968 0.881592 1.75 0.881592H8.09375L8.5 0.881777C8.84766 0.881607 8.49963 0.881792 9 0.881792Z"
+                            fill="#18181B"
+                            class="group-hover:fill-white"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="answer" class="text-sm text-[#737373] hidden">
+                  Provide a step-by-step guide on how users can browse and book
+                  travel services on your platform. Include information on
+                  searching for destinations, selecting dates, choosing
+                  accommodation, and completing the booking process. Mention any
+                  special features or tools that can help users find the best
+                  deals.
+                </div>
+              </div>
+            </div>
+            <div
+              class="box px-6 py-8 group items-center cursor-pointer flex w-full justify-between"
+            >
+              <div class="flex w-full flex-col gap-4">
+                <div class="w-full flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <span class="counter text-primary-900 text-[36px] font-bold"
+                      >01</span
+                    >
+                    <div class="flex flex-col w-[180px] gap-2">
+                      <div class="text-sm">
+                        What documents do I need for my trip, and how do I
+                        obtain them?
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="sign w-12 group-hover:bg-secondary-900 transition-all duration-300 ease-in-out h-12 rounded-lg flex justify-center items-center bg-primary-50"
+                  >
+                    <div
+                      class="w-[16.31px] transition-all duration-300 ease-in-out flex justify-center items-center h-[16.31px] relative"
+                    >
+                      <span class="absolute"
+                        ><svg
+                          width="18"
+                          height="3"
+                          viewBox="0 0 18 3"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 0.881792C9.50037 0.881792 9.20503 0.881792 9.5 0.881792L9.90625 0.881592H16.25C16.7504 0.881592 17.1562 1.28735 17.1562 1.78784C17.1562 2.06165 17.0347 2.30706 16.8429 2.47309C16.6843 2.61072 16.4766 2.69409 16.25 2.69409H9.90625H9.5C9.27734 2.69409 9.50037 2.69409 9 2.69409C8.49963 2.69409 8.60938 2.69409 8.35047 2.69409H8.09375H1.75C1.24968 2.69409 0.84375 2.28833 0.84375 1.78784C0.84375 1.28735 1.24968 0.881592 1.75 0.881592H8.09375L8.5 0.881777C8.84766 0.881607 8.49963 0.881792 9 0.881792Z"
+                            fill="#18181B"
+                            class="group-hover:fill-white"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span class="rotate-90 absolute"
+                        ><svg
+                          width="18"
+                          height="3"
+                          viewBox="0 0 18 3"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 0.881792C9.50037 0.881792 9.20503 0.881792 9.5 0.881792L9.90625 0.881592H16.25C16.7504 0.881592 17.1562 1.28735 17.1562 1.78784C17.1562 2.06165 17.0347 2.30706 16.8429 2.47309C16.6843 2.61072 16.4766 2.69409 16.25 2.69409H9.90625H9.5C9.27734 2.69409 9.50037 2.69409 9 2.69409C8.49963 2.69409 8.60938 2.69409 8.35047 2.69409H8.09375H1.75C1.24968 2.69409 0.84375 2.28833 0.84375 1.78784C0.84375 1.28735 1.24968 0.881592 1.75 0.881592H8.09375L8.5 0.881777C8.84766 0.881607 8.49963 0.881792 9 0.881792Z"
+                            fill="#18181B"
+                            class="group-hover:fill-white"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="answer" class="text-sm text-[#737373] hidden">
+                  Provide a step-by-step guide on how users can browse and book
+                  travel services on your platform. Include information on
+                  searching for destinations, selecting dates, choosing
+                  accommodation, and completing the booking process. Mention any
+                  special features or tools that can help users find the best
+                  deals.
+                </div>
+              </div>
+            </div>
+            <div
+              class="box px-6 py-8 group items-center cursor-pointer flex w-full justify-between"
+            >
+              <div class="flex w-full flex-col gap-4">
+                <div class="w-full flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <span class="counter text-primary-900 text-[36px] font-bold"
+                      >01</span
+                    >
+                    <div class="flex flex-col w-[180px] gap-2">
+                      <div class="text-sm">
+                        What documents do I need for my trip, and how do I
+                        obtain them?
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="sign w-12 group-hover:bg-secondary-900 transition-all duration-300 ease-in-out h-12 rounded-lg flex justify-center items-center bg-primary-50"
+                  >
+                    <div
+                      class="w-[16.31px] transition-all duration-300 ease-in-out flex justify-center items-center h-[16.31px] relative"
+                    >
+                      <span class="absolute"
+                        ><svg
+                          width="18"
+                          height="3"
+                          viewBox="0 0 18 3"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 0.881792C9.50037 0.881792 9.20503 0.881792 9.5 0.881792L9.90625 0.881592H16.25C16.7504 0.881592 17.1562 1.28735 17.1562 1.78784C17.1562 2.06165 17.0347 2.30706 16.8429 2.47309C16.6843 2.61072 16.4766 2.69409 16.25 2.69409H9.90625H9.5C9.27734 2.69409 9.50037 2.69409 9 2.69409C8.49963 2.69409 8.60938 2.69409 8.35047 2.69409H8.09375H1.75C1.24968 2.69409 0.84375 2.28833 0.84375 1.78784C0.84375 1.28735 1.24968 0.881592 1.75 0.881592H8.09375L8.5 0.881777C8.84766 0.881607 8.49963 0.881792 9 0.881792Z"
+                            fill="#18181B"
+                            class="group-hover:fill-white"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span class="rotate-90 absolute"
+                        ><svg
+                          width="18"
+                          height="3"
+                          viewBox="0 0 18 3"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 0.881792C9.50037 0.881792 9.20503 0.881792 9.5 0.881792L9.90625 0.881592H16.25C16.7504 0.881592 17.1562 1.28735 17.1562 1.78784C17.1562 2.06165 17.0347 2.30706 16.8429 2.47309C16.6843 2.61072 16.4766 2.69409 16.25 2.69409H9.90625H9.5C9.27734 2.69409 9.50037 2.69409 9 2.69409C8.49963 2.69409 8.60938 2.69409 8.35047 2.69409H8.09375H1.75C1.24968 2.69409 0.84375 2.28833 0.84375 1.78784C0.84375 1.28735 1.24968 0.881592 1.75 0.881592H8.09375L8.5 0.881777C8.84766 0.881607 8.49963 0.881792 9 0.881792Z"
+                            fill="#18181B"
+                            class="group-hover:fill-white"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="answer" class="text-sm text-[#737373] hidden">
+                  Provide a step-by-step guide on how users can browse and book
+                  travel services on your platform. Include information on
+                  searching for destinations, selecting dates, choosing
+                  accommodation, and completing the booking process. Mention any
+                  special features or tools that can help users find the best
+                  deals.
+                </div>
+              </div>
+            </div>
+            <div
+              class="box px-6 py-8 group items-center cursor-pointer flex w-full justify-between"
+            >
+              <div class="flex w-full flex-col gap-4">
+                <div class="w-full flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <span class="counter text-primary-900 text-[36px] font-bold"
+                      >01</span
+                    >
+                    <div class="flex flex-col w-[180px] gap-2">
+                      <div class="text-sm">
+                        What documents do I need for my trip, and how do I
+                        obtain them?
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="sign w-12 group-hover:bg-secondary-900 transition-all duration-300 ease-in-out h-12 rounded-lg flex justify-center items-center bg-primary-50"
+                  >
+                    <div
+                      class="w-[16.31px] transition-all duration-300 ease-in-out flex justify-center items-center h-[16.31px] relative"
+                    >
+                      <span class="absolute"
+                        ><svg
+                          width="18"
+                          height="3"
+                          viewBox="0 0 18 3"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 0.881792C9.50037 0.881792 9.20503 0.881792 9.5 0.881792L9.90625 0.881592H16.25C16.7504 0.881592 17.1562 1.28735 17.1562 1.78784C17.1562 2.06165 17.0347 2.30706 16.8429 2.47309C16.6843 2.61072 16.4766 2.69409 16.25 2.69409H9.90625H9.5C9.27734 2.69409 9.50037 2.69409 9 2.69409C8.49963 2.69409 8.60938 2.69409 8.35047 2.69409H8.09375H1.75C1.24968 2.69409 0.84375 2.28833 0.84375 1.78784C0.84375 1.28735 1.24968 0.881592 1.75 0.881592H8.09375L8.5 0.881777C8.84766 0.881607 8.49963 0.881792 9 0.881792Z"
+                            fill="#18181B"
+                            class="group-hover:fill-white"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span class="rotate-90 absolute"
+                        ><svg
+                          width="18"
+                          height="3"
+                          viewBox="0 0 18 3"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 0.881792C9.50037 0.881792 9.20503 0.881792 9.5 0.881792L9.90625 0.881592H16.25C16.7504 0.881592 17.1562 1.28735 17.1562 1.78784C17.1562 2.06165 17.0347 2.30706 16.8429 2.47309C16.6843 2.61072 16.4766 2.69409 16.25 2.69409H9.90625H9.5C9.27734 2.69409 9.50037 2.69409 9 2.69409C8.49963 2.69409 8.60938 2.69409 8.35047 2.69409H8.09375H1.75C1.24968 2.69409 0.84375 2.28833 0.84375 1.78784C0.84375 1.28735 1.24968 0.881592 1.75 0.881592H8.09375L8.5 0.881777C8.84766 0.881607 8.49963 0.881792 9 0.881792Z"
+                            fill="#18181B"
+                            class="group-hover:fill-white"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="answer" class="text-sm text-[#737373] hidden">
+                  Provide a step-by-step guide on how users can browse and book
+                  travel services on your platform. Include information on
+                  searching for destinations, selecting dates, choosing
+                  accommodation, and completing the booking process. Mention any
+                  special features or tools that can help users find the best
+                  deals.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          width="586"
+          height="165"
+          src="../../images/freq1.png"
+          alt="Frequently-Questions-image-1"
+          class="absolute z-0 top-[14px] z-0 right-0 w-full"
+        />
+      </section>
+
+      <section class="w-full relative flex justify-center items-center">
+        <div
+          class="px-5 xl:!px-0 py-16 lg:px-5 w-full gap-5 flex-col-reverse items-center flex xl:w-[1280px]"
+        >
+          <div class="flex flex-col w-full gap-6">
+            <p class="text-base text-primary-900">About us:</p>
+            <p class="text-xs text-zinc-900">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae
+              congue mauris rhoncus aenean vel elit scelerisque. In egestas erat
+              imperdiet sed euismod nisi porta lorem mollis. Morbi tristique
+              senectus et netus. Mattis pellentesque id nibh tortor id aliquet
+              lectus proin. Sapien faucibus et molestie ac feugiat sed lectus
+              vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt
+              ornare massa eget. Dictum varius duis at consectetur lorem. Nisi
+              vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut
+              tortor pretium viverra suspendisse potenti nullam. Et molestie ac
+              feugiat sed lectus. Non nisi est sit amet facilisis magna.
+              Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut
+              enim blandit volutpat maecenas volutpat. Ornare lectus sit amet
+              est placerat in egestas erat. Nisi vitae suscipit tellus mauris a
+              diam maecenas sed. .
+            </p>
+          </div>
+          <div class="grid grid-cols-1 gap-3 w-full">
+            <img
+              src="../../images/about-img-2.png.png"
+              alt="about-us-1"
+              width="270"
+              height="248"
+              class="rounded-2xl h-[248px] w-full"
+            />
+            <img
+              src="../../images/about-img-3.png.png"
+              alt="about-us-2"
+              width="270"
+              height="248"
+              class="rounded-2xl h-[248px] w-full"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="w-full flex flex-col gap-3">
+      <div
+        class="footer-top w-full bg-[#F1FBFF] lg:!h-[118px] h-[286px] flex justify-center items-center"
+      >
+        <div
+          class="px-5 xl:!px-0 lg:px-5 w-full justify-between xl:w-[1280px] lg:!items-center flex flex-col gap-4 lg:!gap-0 lg:!flex-row"
+        >
+          <div class="flex flex-col gap-5">
+            <a href="/" class="hover:scale-110">
+              <img
+                src="../../images/footer-logo.png"
+                alt="footer-logo"
+                aria-label="footer-logo"
+                class="lg:!w-[176px] lg:!h-[25px] w-[120px] h-[17px]"
+                width="176"
+                height="25"
+              />
+            </a>
+            <p class="text-sm text-primary-200">
+              Receive pricing updates, shopping tips & more!
+            </p>
+          </div>
+          <div class="flex">
+            <button
+              class="tzone-btn group bg-transparent justify-center items-center cursor-pointer w-[140px] flex h-[49px] relative"
+            >
+              <div
+                class="w-full z-0 h-full hover:bg-primary-700 bg-secondary-900 text-white rounded-lg flex justify-center items-center"
+              >
+                Send
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer-bottom w-full bg-[#F1FBFF] flex justify-center items-center"
+      >
+        <div
+          class="px-5 xl:!px-0 lg:px-5 w-full flex-col gap-4 xl:w-[1280px] items-center flex"
+        >
+          <div
+            class="w-full flex justify-between py-6 max-md:!flex-wrap max-md:!gap-10"
+          >
+            <div class="flex flex-col gap-4 max-md:!w-full">
+              <p class="lg:!font-bold text-xl text-primary-900">About us:</p>
+              <p
+                class="text-sm text-primary-900 lg:!w-[535px] w-full lg:!line-clamp-5 mb-4"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae
+                congue mauris rhoncus aenean vel elit scelerisque. In egestas
+                erat imperdiet sed euismod nisi porta lorem mollis. Morbi
+                tristique senectus et netus. Mattis pellentesque id nibh tortor
+                id aliquet lectus proin.
+              </p>
+              <div class="flex flex-col gap-4">
+                <a
+                  href="tel:"
+                  class="flex gap-2 text-primary-900 hover:text-primary-400 items-center"
+                >
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_93_1431)">
+                      <path
+                        d="M1.86744 1.13266C2.25855 0.741552 2.71188 0.563774 3.22744 0.59933C3.74299 0.634886 4.16077 0.865996 4.48077 1.29266L6.2941 3.586C6.47188 3.79933 6.58744 4.03933 6.64077 4.306C6.6941 4.57266 6.68521 4.83044 6.6141 5.07933L6.08077 7.266C6.00966 7.51488 6.06299 7.72822 6.24077 7.906L8.6941 10.3593C8.87188 10.5371 9.08521 10.5904 9.3341 10.5193L11.5208 9.986C11.7697 9.91488 12.0274 9.906 12.2941 9.95933C12.5608 10.0127 12.8008 10.1282 13.0141 10.306L15.3074 12.1193C15.7341 12.4393 15.9652 12.8571 16.0008 13.3727C16.0363 13.8882 15.8585 14.3416 15.4674 14.7327L14.4541 15.746C14.063 16.1371 13.6097 16.3949 13.0941 16.5193C12.5785 16.6438 12.0719 16.6171 11.5741 16.4393C8.90744 15.5149 6.56966 14.0482 4.56077 12.0393C2.55188 10.0304 1.08521 7.69266 0.160769 5.026C-0.0170088 4.52822 -0.0436754 4.02155 0.080769 3.506C0.205213 2.99044 0.462991 2.53711 0.854102 2.146L1.86744 1.13266Z"
+                        fill="#110F5A"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_93_1431">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="matrix(1 0 0 -1 0 16.6001)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  +012 345 67890
+                </a>
+                <a
+                  href="mailto:"
+                  class="flex gap-2 text-primary-900 hover:text-primary-400 items-center"
+                >
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.0533333 4.17411C0.16 3.71189 0.391111 3.32966 0.746667 3.02744C1.10222 2.72522 1.51111 2.57411 1.97333 2.57411H14.0267C14.4889 2.57411 14.8978 2.72522 15.2533 3.02744C15.6089 3.32966 15.84 3.71189 15.9467 4.17411L8 9.02744L0.0533333 4.17411ZM0 5.29411V12.3874L5.81333 8.86744L0 5.29411ZM6.77333 9.45411L0.213333 13.4541C0.355556 13.8097 0.595556 14.0941 0.933333 14.3074C1.27111 14.5208 1.61778 14.6274 1.97333 14.6274H14.0267C14.3822 14.6274 14.7289 14.5208 15.0667 14.3074C15.4044 14.0941 15.6444 13.8097 15.7867 13.4541L9.22667 9.45411L8 10.2008L6.77333 9.45411ZM10.1867 8.86744L16 12.3874V5.29411L10.1867 8.86744Z"
+                      fill="#110F5A"
+                    />
+                  </svg>
+
+                  cxqxs@example.com
+                </a>
+
+                <p class="flex gap-2 text-primary-900 items-center">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_93_1441)">
+                      <path
+                        d="M7.99932 16.6001C8.31932 16.2801 8.63932 15.9601 8.95932 15.6401C9.70599 14.8579 10.3815 14.0579 10.986 13.2401C11.8749 12.0668 12.5682 10.9823 13.066 9.98676C13.706 8.70676 14.026 7.56899 14.026 6.57343C14.026 5.50676 13.7504 4.51121 13.1993 3.58676C12.6482 2.66232 11.9193 1.93343 11.0127 1.4001C10.106 0.866764 9.10155 0.600098 7.99932 0.600098C6.8971 0.600098 5.89266 0.866764 4.98599 1.4001C4.07932 1.93343 3.35043 2.66232 2.79932 3.58676C2.24821 4.51121 1.97266 5.50676 1.97266 6.57343C1.97266 7.56899 2.29266 8.70676 2.93266 9.98676C3.43043 10.9823 4.12377 12.0668 5.01266 13.2401C5.6171 14.0579 6.29266 14.8579 7.03932 15.6401L7.99932 16.6001ZM7.99932 9.61343C7.18155 9.61343 6.47932 9.3201 5.89266 8.73343C5.30599 8.14676 5.01266 7.43565 5.01266 6.6001C5.01266 5.76454 5.30599 5.05343 5.89266 4.46676C6.47932 3.8801 7.18155 3.58676 7.99932 3.58676C8.8171 3.58676 9.51932 3.8801 10.106 4.46676C10.6927 5.05343 10.986 5.76454 10.986 6.6001C10.986 7.43565 10.6927 8.14676 10.106 8.73343C9.51932 9.3201 8.8171 9.61343 7.99932 9.61343Z"
+                        fill="#110F5A"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_93_1441">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="matrix(1 0 0 -1 0 16.6001)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  123 Street, New York, USA
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <p class="text-xl text-primary-900 lg:!font-bold">Catg...</p>
+              <div
+                class="text-sm text-primary-900 hover:text-secondary-600 cursor-pointer"
+              >
+                Hotel
+              </div>
+              <a
+                href=""
+                class="text-sm text-primary-900 hover:text-secondary-600 cursor-pointer"
+                >Holidays</a
+              >
+            </div>
+
+            <div class="flex flex-col gap-4 max-md:mr-6">
+              <p class="text-xl text-primary-900 lg:!font-bold">Company</p>
+
+              <a
+                href=""
+                class="text-sm text-primary-900 hover:text-secondary-600 cursor-pointer"
+                >Blog</a
+              >
+              <a
+                href=""
+                class="text-sm text-primary-900 hover:text-secondary-600 cursor-pointer"
+                >About us</a
+              >
+              <a
+                href=""
+                class="text-sm text-primary-900 hover:text-secondary-600 cursor-pointer"
+                >Contact us</a
+              >
+            </div>
+
+            <div class="flex flex-col gap-4 max-md:!w-full">
+              <p class="text-xl text-primary-900 lg:!font-bold">Falow us:</p>
+
+              <div class="max-md:!w-full max-md:!flex max-md:!justify-center">
+                <div class="grid grid-cols-3 gap-2 w-[90%] lg:w-[256px]">
+                  <img
+                    src="../../images/footer1.png"
+                    alt="footer-1"
+                    class="rounded-sm h-[80px] w-full"
+                  />
+                  <img
+                    src="../../images/footer2.png"
+                    alt="footer-2"
+                    class="rounded-sm h-[80px] w-full"
+                  />
+
+                  <img
+                    src="../../images/footer3.png"
+                    alt="footer-3"
+                    class="rounded-sm h-[80px] w-full"
+                  />
+
+                  <img
+                    src="../../images/footer4.png"
+                    alt="footer-4"
+                    class="rounded-sm h-[80px] w-full"
+                  />
+
+                  <img
+                    src="../../images/footer5.png"
+                    alt="footer-5"
+                    class="rounded-sm h-[80px] w-full"
+                  />
+
+                  <img
+                    src="../../images/footer6.png"
+                    alt="footer-6"
+                    class="rounded-sm h-[80px] w-full"
+                  />
+                </div>
+              </div>
+              <div class="flex w-full justify-between items-center">
+                <a
+                  href="facebook"
+                  class="hover:bg-secondary-600 w-10 h-10 flex justify-center items-center rounded-full"
+                >
+                  <svg
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.6373 9.11255H5.44003V15.675H2.51034V9.11255H0.108V6.41724H2.51034V4.33716C2.51034 1.99341 3.91659 0.675049 6.05527 0.675049C7.08066 0.675049 8.16464 0.880127 8.16464 0.880127V3.19458H6.96347C5.79159 3.19458 5.44003 3.89771 5.44003 4.65942V6.41724H8.04745L7.6373 9.11255Z"
+                      fill="#110F5A"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="hover:bg-secondary-600 w-10 h-10 flex justify-center items-center rounded-full"
+                  href="insta"
+                  ><svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.1705 3.80591C9.0162 3.80591 10.5396 5.32935 10.5396 7.17505C10.5396 9.05005 9.0162 10.5442 7.1705 10.5442C5.2955 10.5442 3.80136 9.05005 3.80136 7.17505C3.80136 5.32935 5.2955 3.80591 7.1705 3.80591ZM7.1705 9.37231C8.37167 9.37231 9.33847 8.40552 9.33847 7.17505C9.33847 5.97388 8.37167 5.00708 7.1705 5.00708C5.94003 5.00708 4.97323 5.97388 4.97323 7.17505C4.97323 8.40552 5.96933 9.37231 7.1705 9.37231ZM11.4478 3.68872C11.4478 4.12817 11.0963 4.47974 10.6568 4.47974C10.2174 4.47974 9.86581 4.12817 9.86581 3.68872C9.86581 3.24927 10.2174 2.89771 10.6568 2.89771C11.0963 2.89771 11.4478 3.24927 11.4478 3.68872ZM13.6744 4.47974C13.733 5.56372 13.733 8.81567 13.6744 9.89966C13.6158 10.9543 13.3814 11.8625 12.6197 12.6536C11.858 13.4153 10.9205 13.6497 9.86581 13.7083C8.78183 13.7668 5.52987 13.7668 4.44589 13.7083C3.3912 13.6497 2.483 13.4153 1.69198 12.6536C0.930265 11.8625 0.69589 10.9543 0.637297 9.89966C0.578703 8.81567 0.578703 5.56372 0.637297 4.47974C0.69589 3.42505 0.930265 2.48755 1.69198 1.72583C2.483 0.964111 3.3912 0.729736 4.44589 0.671143C5.52987 0.612549 8.78183 0.612549 9.86581 0.671143C10.9205 0.729736 11.858 0.964111 12.6197 1.72583C13.3814 2.48755 13.6158 3.42505 13.6744 4.47974ZM12.2682 11.0422C12.6197 10.1926 12.5318 8.14185 12.5318 7.17505C12.5318 6.23755 12.6197 4.18677 12.2682 3.30786C12.0338 2.75122 11.5943 2.28247 11.0377 2.07739C10.1588 1.72583 8.108 1.81372 7.1705 1.81372C6.2037 1.81372 4.15292 1.72583 3.30331 2.07739C2.71737 2.31177 2.27792 2.75122 2.04355 3.30786C1.69198 4.18677 1.77987 6.23755 1.77987 7.17505C1.77987 8.14185 1.69198 10.1926 2.04355 11.0422C2.27792 11.6282 2.71737 12.0676 3.30331 12.302C4.15292 12.6536 6.2037 12.5657 7.1705 12.5657C8.108 12.5657 10.1588 12.6536 11.0377 12.302C11.5943 12.0676 12.0631 11.6282 12.2682 11.0422Z"
+                      fill="#110F5A"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="linked"
+                  class="hover:bg-secondary-600 w-10 h-10 flex justify-center items-center rounded-full"
+                  ><svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.53769 13.8H0.813078V5.04028H3.53769V13.8ZM2.16073 3.86841C1.31112 3.86841 0.608 3.13599 0.608 2.25708C0.608 1.40747 1.31112 0.704346 2.16073 0.704346C3.03964 0.704346 3.74277 1.40747 3.74277 2.25708C3.74277 3.13599 3.03964 3.86841 2.16073 3.86841ZM13.7037 13.8H11.0084V9.552C11.0084 8.52661 10.9791 7.23755 9.57284 7.23755C8.16659 7.23755 7.96152 8.32153 7.96152 9.46411V13.8H5.23691V5.04028H7.84433V6.24146H7.87362C8.25448 5.56763 9.13339 4.83521 10.4517 4.83521C13.2057 4.83521 13.733 6.65161 13.733 8.99536V13.8H13.7037Z"
+                      fill="#110F5A"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="twit"
+                  class="hover:bg-secondary-600 w-10 h-10 flex justify-center items-center rounded-full"
+                  ><svg
+                    width="16"
+                    height="13"
+                    viewBox="0 0 16 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.1348 3.12817C14.1348 3.27466 14.1348 3.39185 14.1348 3.53833C14.1348 7.6106 11.0586 12.2688 5.4043 12.2688C3.64648 12.2688 2.03516 11.7708 0.6875 10.8918C0.921875 10.9211 1.15625 10.9504 1.41992 10.9504C2.85547 10.9504 4.17383 10.4524 5.22852 9.63208C3.88086 9.60278 2.73828 8.72388 2.35742 7.49341C2.5625 7.52271 2.73828 7.552 2.94336 7.552C3.20703 7.552 3.5 7.49341 3.73438 7.43481C2.32812 7.14185 1.27344 5.91138 1.27344 4.41724V4.38794C1.68359 4.62231 2.18164 4.7395 2.67969 4.7688C1.83008 4.21216 1.30273 3.27466 1.30273 2.21997C1.30273 1.63403 1.44922 1.10669 1.71289 0.667236C3.23633 2.51294 5.52148 3.74341 8.07031 3.88989C8.01172 3.65552 7.98242 3.42114 7.98242 3.18677C7.98242 1.48755 9.35938 0.110596 11.0586 0.110596C11.9375 0.110596 12.7285 0.462158 13.3145 1.07739C13.9883 0.930908 14.6621 0.667236 15.248 0.315674C15.0137 1.0481 14.5449 1.63403 13.9004 2.01489C14.5156 1.9563 15.1309 1.78052 15.6582 1.54614C15.248 2.16138 14.7207 2.68872 14.1348 3.12817Z"
+                      fill="#110F5A"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center pb-6 gap-5 w-full lg:!flex-row flex-col-reverse"
+          >
+            <div
+              class="lg:!w-[14%] w-full flex lg:!justify-start justify-center"
+            >
+              <a
+                class="text-primary-400 hover:text-primary-700 lg:!whitespace-nowrap text-xs text-center lg:!text-start"
+                href="https://basisfly.ae/"
+                target="_blank"
+              >
+                Web Design&nbsp;&amp;&nbsp;Online Reservation By</a
+              >
+            </div>
+            <div
+              class="flex items-center w-full lg:!w-[86%] justify-center gap-1 lg:!justify-between"
+            >
+              <a href="https://basisfly.ae/" target="_blank">
+                <img
+                  loading="lazy"
+                  width="102"
+                  height="26"
+                  class="w-[68px] h-[17px]"
+                  src="https://cdn.basiscore.net/babanowrouz.com/images/basisfly-logo.png"
+                  alt="basisfly-logo"
+                  aria-label="basisfly-logo"
+                />
+              </a>
+              <img
+                loading="lazy"
+                width="135"
+                height="23"
+                src="http://cdn.basiscore.net/flyalrafah.travel/images/trust-logo.png"
+                alt="Trust_logo"
+                class="w-[68px] h-[14px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://cdn.basiscore.net/basisfly.com/js/swiper-bundle.min.js"></script>
+  <script src="../../js/ticketZone-core.js"></script>
+</html>

@@ -1,0 +1,273 @@
+<basis
+  core="dbsource"
+  name="db"
+  source="basiscore"
+  lid="2"
+  mid="1"
+  usedforid="2379755"
+>
+  <member typeid="159" name="History" type="view" />
+</basis>
+<basis
+  core="dbsource"
+  name="db"
+  source="basiscore"
+  lid="2"
+  mid="1"
+  usedforid="2379756"
+>
+  <member typeid="159" name="Team" type="view" />
+</basis>
+
+
+<basis
+  core="dbsource"
+  source="basiscore"
+  name="db"
+  mid="1"
+  lid="2"
+  usedforid="2379748"
+>
+  <member typeid="159" propertyid="7249" name="about-us-article" type="view" />
+  <member name="data" type="view" request="rdfa" />
+</basis>
+
+<basis
+  core="dbsource"
+  source="media"
+  lid="2"
+  name="db"
+  usedforid="2379748"
+  sourcemid="article"
+>
+  <member type="list" name="gallery" format="4" order="ord"></member>
+</basis>
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[##cms.seo.title|( About TicketZone )##]</title>
+    <meta
+      name="description"
+      content="[##cms.seo.description|(About TicketZone)##]"
+    />
+    <link rel="canonical" href="[##cms.cms.full-url##]" />
+    <basis
+      core="dbsource"
+      source="hosting"
+      name="tag"
+      urlid="[##cms.seo.urlid##]"
+      ><member type="list" name="list" request="taglist" preview=""></member
+    ></basis>
+    <basis core="print" datamembername="tag.list"
+      ><face filter="key='canonical'"
+        ><link rel="canonical" href="@value" /></face
+      ><face><meta property="@key" content="@value" /></face
+    ></basis>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      href="[##cms.cms.cdn##]/images/custom_icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="[##cms.cms.cdn##]/_css/swiper-bundle.min.css"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="theme-color" content="#1F206F" />
+
+    <basis lid="2" core="call" file="style.inc" />
+  </head>
+  <body class="overflow-x-hidden">
+    <basis core="call" file="header.inc" lid="2" />
+    <main class="overflow-x-hidden">
+      <section class="w-full relative flex justify-center items-center">
+        <div
+          class="xl:!px-0 py-16 lg:px-5 w-full gap-5 justify-between items-center flex xl:!w-[1280px]"
+        >
+          <img
+            width="606"
+            height="540"
+            src="[##cms.cms.cdn##]/images/aboute-us-cnt.png"
+            alt="aboute-us"
+            class="w-[47.38%]"
+          />
+          <div class="flex flex-col w-[47%] gap-[23px]">
+            <div
+              class="flex flex-col w-full gap-5 pb-[23px] border-b border-zinc-300"
+            >
+              <basis core="print" datamembername="db.History">
+                <face filter="TypeID=150">
+                  <h1 class="font-bold text-xl text-primary-900">
+                    @text :
+                  </h1></face
+                >
+                <face filter="TypeID<>150">
+                  <div class="text-sm text-primary-900">@Answer</div>
+                </face>
+              </basis>
+            </div>
+            <div class="flex flex-col gap-4">
+              <basis core="print" datamembername="db.info">
+                <face filter="TypeID=240">
+                  <a
+                    href="tel:@text"
+                    class="flex gap-2 text-primary-900 hover:text-primary-400 items-center"
+                  >
+                    <svg
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_93_1431)">
+                        <path
+                          d="M1.86744 1.13266C2.25855 0.741552 2.71188 0.563774 3.22744 0.59933C3.74299 0.634886 4.16077 0.865996 4.48077 1.29266L6.2941 3.586C6.47188 3.79933 6.58744 4.03933 6.64077 4.306C6.6941 4.57266 6.68521 4.83044 6.6141 5.07933L6.08077 7.266C6.00966 7.51488 6.06299 7.72822 6.24077 7.906L8.6941 10.3593C8.87188 10.5371 9.08521 10.5904 9.3341 10.5193L11.5208 9.986C11.7697 9.91488 12.0274 9.906 12.2941 9.95933C12.5608 10.0127 12.8008 10.1282 13.0141 10.306L15.3074 12.1193C15.7341 12.4393 15.9652 12.8571 16.0008 13.3727C16.0363 13.8882 15.8585 14.3416 15.4674 14.7327L14.4541 15.746C14.063 16.1371 13.6097 16.3949 13.0941 16.5193C12.5785 16.6438 12.0719 16.6171 11.5741 16.4393C8.90744 15.5149 6.56966 14.0482 4.56077 12.0393C2.55188 10.0304 1.08521 7.69266 0.160769 5.026C-0.0170088 4.52822 -0.0436754 4.02155 0.080769 3.506C0.205213 2.99044 0.462991 2.53711 0.854102 2.146L1.86744 1.13266Z"
+                          fill="#110F5A"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_93_1431">
+                          <rect
+                            width="16"
+                            height="16"
+                            fill="white"
+                            transform="matrix(1 0 0 -1 0 16.6001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    @text
+                  </a>
+                </face>
+              </basis>
+
+              <basis core="print" datamembername="db.info">
+                <face filter="TypeID=242">
+                  <a
+                    href="mailto:@text"
+                    class="flex gap-2 text-primary-900 hover:text-primary-400 items-center"
+                  >
+                    <svg
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.0533333 4.17411C0.16 3.71189 0.391111 3.32966 0.746667 3.02744C1.10222 2.72522 1.51111 2.57411 1.97333 2.57411H14.0267C14.4889 2.57411 14.8978 2.72522 15.2533 3.02744C15.6089 3.32966 15.84 3.71189 15.9467 4.17411L8 9.02744L0.0533333 4.17411ZM0 5.29411V12.3874L5.81333 8.86744L0 5.29411ZM6.77333 9.45411L0.213333 13.4541C0.355556 13.8097 0.595556 14.0941 0.933333 14.3074C1.27111 14.5208 1.61778 14.6274 1.97333 14.6274H14.0267C14.3822 14.6274 14.7289 14.5208 15.0667 14.3074C15.4044 14.0941 15.6444 13.8097 15.7867 13.4541L9.22667 9.45411L8 10.2008L6.77333 9.45411ZM10.1867 8.86744L16 12.3874V5.29411L10.1867 8.86744Z"
+                        fill="#110F5A"
+                      ></path>
+                    </svg>
+                    @text
+                  </a>
+                </face>
+              </basis>
+              <basis core="print" datamembername="db.info">
+                <face filter="TypeID=244">
+                  <div class="flex gap-2 text-primary-900 items-center">
+                    <svg
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_93_1441)">
+                        <path
+                          d="M7.99932 16.6001C8.31932 16.2801 8.63932 15.9601 8.95932 15.6401C9.70599 14.8579 10.3815 14.0579 10.986 13.2401C11.8749 12.0668 12.5682 10.9823 13.066 9.98676C13.706 8.70676 14.026 7.56899 14.026 6.57343C14.026 5.50676 13.7504 4.51121 13.1993 3.58676C12.6482 2.66232 11.9193 1.93343 11.0127 1.4001C10.106 0.866764 9.10155 0.600098 7.99932 0.600098C6.8971 0.600098 5.89266 0.866764 4.98599 1.4001C4.07932 1.93343 3.35043 2.66232 2.79932 3.58676C2.24821 4.51121 1.97266 5.50676 1.97266 6.57343C1.97266 7.56899 2.29266 8.70676 2.93266 9.98676C3.43043 10.9823 4.12377 12.0668 5.01266 13.2401C5.6171 14.0579 6.29266 14.8579 7.03932 15.6401L7.99932 16.6001ZM7.99932 9.61343C7.18155 9.61343 6.47932 9.3201 5.89266 8.73343C5.30599 8.14676 5.01266 7.43565 5.01266 6.6001C5.01266 5.76454 5.30599 5.05343 5.89266 4.46676C6.47932 3.8801 7.18155 3.58676 7.99932 3.58676C8.8171 3.58676 9.51932 3.8801 10.106 4.46676C10.6927 5.05343 10.986 5.76454 10.986 6.6001C10.986 7.43565 10.6927 8.14676 10.106 8.73343C9.51932 9.3201 8.8171 9.61343 7.99932 9.61343Z"
+                          fill="#110F5A"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_93_1441">
+                          <rect
+                            width="16"
+                            height="16"
+                            fill="white"
+                            transform="matrix(1 0 0 -1 0 16.6001)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    @largetext
+                  </div>
+                </face>
+              </basis>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="w-full mb-[200px] relative flex justify-center items-center"
+      >
+        <span
+          class="absolute h-[376px] left-0 bg-primary-900 w-full top-[50%]"
+        ></span>
+        <div
+          class="p-6 z-[2] bg-zinc-100 w-full gap-[29px] items-center flex xl:!w-[1280px]"
+        >
+          <div class="w-[50%] flex flex-col gap-[39px]">
+            <p class="text-base">Who we are</p>
+            <basis core="print" datamembername="db.Team">
+              <face filter="TypeID=150">
+                <h2 class="text-4xl font-bold text-zinc-900">@text</h2>
+              </face>
+              <face filter="TypeID<>150">
+                <div class="text-sm">@largetext</div>
+              </face>
+            </basis>
+          </div>
+          <img
+            src="[##cms.cms.cdn##]/images/close-up-blurry-hand.jpg"
+            alt="about-us-image"
+            width="602"
+            height="335"
+            class="w-[50%] h-full"
+          />
+        </div>
+      </section>
+       <section class="w-full relative flex justify-center items-center">
+        <div
+          class="xl:!px-0 py-16 lg:px-5 w-full gap-5 justify-between items-center flex xl:!w-[1280px]"
+        >
+          <div class="flex flex-col w-[53%] gap-6">
+            <basis core="print" datamembername="db.about-us-article">
+              <face filter="TypeID=150">
+                <p class="text-2xl font-bold text-primary-900">@text :</p>
+              </face>
+            </basis>
+            <basis core="print" datamembername="db.about-us-article">
+              <face filter="TypeID=129">
+                <div class="text-sm text-zinc-900">@largetext</div>
+              </face>
+            </basis>
+          </div>
+          <div class="grid grid-cols-2 gap-3 w-[42%]">
+            <basis core="print" datamembername="db.gallery">
+              <face>
+                <img
+                  loading="lazy"
+                  src="@largeIMG"
+                  alt="@name"
+                  width="425"
+                  height="425"
+                  class="rounded-2xl h-[248px]"
+                />
+              </face>
+            </basis>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="[##cms.cms.cdn##]/_js/swiper-bundle.11.2.5.min.js "></script>
+
+    <basis core="call" file="footer.inc" lid="2" />
+  </body>
+</html>

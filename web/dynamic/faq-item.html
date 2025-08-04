@@ -1,0 +1,70 @@
+<basis
+  core="dbsource"
+  source="basiscore"
+  name="db"
+  mid="1"
+  lid="2"
+  usedforid="[##cms.query.id##]"
+>
+  <member name="faq-load" type="view" propertyid="7246" />
+</basis>
+<basis core="print" datamembername="db.faq-load">
+  <layout>
+    <div
+      class="common-qs bg-[#FDFEFF] z-[1] mb-64 transition-all duration-300 ease-in-out w-[1034px] flex flex-col border border-[#E4E4E7] divide-y divide-[#E4E4E7]"
+    >
+      @child
+    </div>
+  </layout>
+  <face filter="RowNumber<>1">
+    <div class="box px-6 py-8 group cursor-pointer flex w-full justify-between">
+      <div class="flex gap-6 items-center">
+        <span class="counter text-primary-900 text-[36px] font-bold box-count">@RowNumber</span>
+        <div class="flex flex-col w-[857px] gap-2">
+          <div class="text-xl font-bold leading-[28px]">@text</div>
+          <div id="answer" class="text-sm text-[#737373] hidden">
+            @largetext
+          </div>
+        </div>
+      </div>
+      <div
+        class="sign w-12 group-hover:bg-secondary-900 transition-all duration-300 ease-in-out h-12 rounded-lg flex justify-center items-center bg-primary-50"
+      >
+        <div
+          class="w-[16.31px] transition-all duration-300 ease-in-out flex justify-center items-center h-[16.31px] relative"
+        >
+          <span class="absolute"
+            ><svg
+              width="18"
+              height="3"
+              viewBox="0 0 18 3"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 0.881792C9.50037 0.881792 9.20503 0.881792 9.5 0.881792L9.90625 0.881592H16.25C16.7504 0.881592 17.1562 1.28735 17.1562 1.78784C17.1562 2.06165 17.0347 2.30706 16.8429 2.47309C16.6843 2.61072 16.4766 2.69409 16.25 2.69409H9.90625H9.5C9.27734 2.69409 9.50037 2.69409 9 2.69409C8.49963 2.69409 8.60938 2.69409 8.35047 2.69409H8.09375H1.75C1.24968 2.69409 0.84375 2.28833 0.84375 1.78784C0.84375 1.28735 1.24968 0.881592 1.75 0.881592H8.09375L8.5 0.881777C8.84766 0.881607 8.49963 0.881792 9 0.881792Z"
+                fill="#18181B"
+                class="group-hover:fill-white"
+              ></path>
+            </svg>
+          </span>
+          <span class="rotate-90 absolute"
+            ><svg
+              width="18"
+              height="3"
+              viewBox="0 0 18 3"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 0.881792C9.50037 0.881792 9.20503 0.881792 9.5 0.881792L9.90625 0.881592H16.25C16.7504 0.881592 17.1562 1.28735 17.1562 1.78784C17.1562 2.06165 17.0347 2.30706 16.8429 2.47309C16.6843 2.61072 16.4766 2.69409 16.25 2.69409H9.90625H9.5C9.27734 2.69409 9.50037 2.69409 9 2.69409C8.49963 2.69409 8.60938 2.69409 8.35047 2.69409H8.09375H1.75C1.24968 2.69409 0.84375 2.28833 0.84375 1.78784C0.84375 1.28735 1.24968 0.881592 1.75 0.881592H8.09375L8.5 0.881777C8.84766 0.881607 8.49963 0.881792 9 0.881792Z"
+                fill="#18181B"
+                class="group-hover:fill-white"
+              ></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </face>
+</basis>

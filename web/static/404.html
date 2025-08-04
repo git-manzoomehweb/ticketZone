@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ticketZone</title>
+    <link rel="stylesheet" href="../../output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.basiscore.net/basisfly.com/css/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="">
+    <header class="flex flex-col gap-0 w-full">
+      <div
+        class="header-top w-full hidden lg:!flex justify-center h-[43px] bg-primary-950"
+      >
+        <div
+          class="px-5 w-full gap-[29px] flex-row-reverse lg:px-5 xl:!w-[1280px] items-center xl:!px-0 flex !text-white"
+        >
+          <!-- <a href="" class="text-sm hover:text-secondary-500">Language</a> -->
+
+          <a href="" class="text-sm hover:text-secondary-500"
+            >Login or Creat acount</a
+          >
+          <p class="text-sm hover:text-secondary-500">24/7 Support</p>
+        </div>
+      </div>
+      <div
+        class="header-bottom lg:!h-[100px] lg:!bg-primary-800 bg-primary-950 flex items-center justify-center"
+      >
+        <div
+          class="xl:!px-0 lg:px-5 w-full justify-between xl:!w-[1280px] items-center flex max-sm:flex-wrap !text-white"
+        >
+          <div
+            class="lg:!w-fit w-full lg:!py-0 py-4 max-sm:px-5 flex justify-between items-center"
+          >
+            <a href="/" class="hover:scale-110">
+              <img
+                src="../../images/logo.png"
+                alt="logo"
+                aria-label="logo"
+                class="lg:!w-[198.28px] lg:!h-[28px] w-[74px] h-[10px]"
+                width="198.28"
+                height="28"
+              />
+            </a>
+            <button class="bars3 lg:!hidden">
+              <svg
+                width="24"
+                height="26"
+                viewBox="0 0 24 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.75 20.7656C3.75 20.3514 4.08579 20.0156 4.5 20.0156H20.5C20.9142 20.0156 21.25 20.3514 21.25 20.7656C21.25 21.1798 20.9142 21.5156 20.5 21.5156H4.5C4.08579 21.5156 3.75 21.1798 3.75 20.7656Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.75 6.76562C3.75 6.35142 4.08579 6.01562 4.5 6.01562H20.5C20.9142 6.01562 21.25 6.35142 21.25 6.76562C21.25 7.17984 20.9142 7.51562 20.5 7.51562H4.5C4.08579 7.51562 3.75 7.17984 3.75 6.76562Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.75 13.7656C3.75 13.3514 4.08579 13.0156 4.5 13.0156H20.5C20.9142 13.0156 21.25 13.3514 21.25 13.7656C21.25 14.1798 20.9142 14.5156 20.5 14.5156H4.5C4.08579 14.5156 3.75 14.1798 3.75 13.7656Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="lg:!w-fit max-sm:bg-primary-800 max-sm:px-5 w-full lg:!py-0 py-2 flex justify-between items-center gap-[4px]"
+          >
+            <a
+              href="/"
+              class="w-[80px] gap-[4px] group hover:bg-secondary-900 hover:shadow-inner h-[84px] bg-transparent rounded-lg flex flex-col justify-center items-center"
+            >
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.7022 37.16V32.5734C19.7022 31.4026 20.6583 30.4535 21.8377 30.4535H26.1489C26.7153 30.4535 27.2585 30.6768 27.6589 31.0744C28.0594 31.472 28.2844 32.0112 28.2844 32.5734V37.16C28.2808 37.6468 28.4731 38.1148 28.8186 38.4603C29.164 38.8057 29.6341 39 30.1244 39H33.0657C34.4395 39.0035 35.7581 38.4643 36.7308 37.5012C37.7034 36.5382 38.25 35.2305 38.25 33.8667V20.8003C38.25 19.6987 37.7581 18.6538 36.9069 17.947L26.901 10.0138C25.1605 8.62284 22.6667 8.66775 20.9781 10.1205L11.2005 17.947C10.3091 18.6329 9.77633 19.681 9.75 20.8003V33.8534C9.75 36.6958 12.0711 39 14.9343 39H17.8084C18.8268 39 19.6545 38.1843 19.6619 37.1733L19.7022 37.16Z"
+                  fill="white"
+                />
+              </svg>
+
+              Home
+            </a>
+            <div
+              class="w-[80px] gap-[4px] cursor-pointer group hover:bg-secondary-900 hover:shadow-inner h-[84px] bg-transparent rounded-lg flex flex-col justify-center items-center"
+            >
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M37.791 23.5656C36.5145 22.056 34.323 21.7837 33.4395 21.7363C31.8885 21.6549 30.327 21.6712 28.8165 21.686L28.1625 21.6312C27.1545 19.4453 26.0985 17.2756 25.035 15.1266C24.318 13.6555 23.2905 12.8016 21.993 12.5899C21.2655 12.4656 20.541 12.4419 19.8405 12.4197C19.542 12.4108 19.239 12.402 18.93 12.3842C18.627 12.3694 18.3225 12.473 18.096 12.6817C17.871 12.8889 17.742 13.179 17.739 13.4838L17.6715 21.5987C16.764 21.5942 15.6945 21.6001 14.6265 21.6016C13.5705 21.6046 12.5175 21.6075 11.631 21.6061C11.634 21.1428 11.637 20.6367 11.64 20.3821C11.6445 19.7694 11.145 19.2914 10.524 19.2869C9.882 19.2662 9.3945 19.7975 9.39 20.4102C9.3855 20.8291 9.375 22.1477 9.375 22.4941C9.39 27.0584 12.1185 29.8349 16.671 29.9192C22.0065 30.0184 27.252 30.0391 33.4845 30.0391C35.7165 30.0391 38.265 28.8965 38.5905 26.3894C38.7285 25.3223 38.451 24.347 37.791 23.5656Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M34.1322 35.9727H13.8672C13.2462 35.9727 12.7422 36.4699 12.7422 37.0827C12.7422 37.6954 13.2462 38.1927 13.8672 38.1927H34.1322C34.7532 38.1927 35.2572 37.6954 35.2572 37.0827C35.2572 36.4699 34.7532 35.9727 34.1322 35.9727Z"
+                  fill="white"
+                />
+              </svg>
+
+              Flight
+            </div>
+            <div
+              class="w-[80px] gap-[4px] cursor-pointer group hover:bg-secondary-900 hover:shadow-inner h-[84px] bg-transparent rounded-lg flex flex-col justify-center items-center"
+            >
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.9297 21.9647H16.2567C16.4224 21.9647 16.5559 21.8303 16.5545 21.6647C16.5511 21.2649 16.556 20.8565 16.6872 20.4796C16.9182 19.8391 17.4117 19.3456 18.0447 19.1191C18.4152 18.9856 18.7887 18.9856 19.4667 18.9856H20.3967C21.0761 18.9856 21.4511 18.9856 21.8201 19.1206C22.4516 19.3456 22.9451 19.8391 23.1731 20.4706C23.3054 20.8511 23.3116 21.2618 23.3087 21.6647C23.3075 21.8303 23.441 21.9647 23.6066 21.9647H24.5066C24.6724 21.9647 24.8059 21.8303 24.8045 21.6647C24.8011 21.2649 24.806 20.8565 24.9371 20.4796C25.1681 19.8391 25.6616 19.3456 26.2946 19.1191C26.6651 18.9856 27.0386 18.9856 27.7166 18.9856H28.6466C29.3261 18.9856 29.7011 18.9856 30.0701 19.1206C30.7016 19.3456 31.1951 19.8391 31.4231 20.4706C31.5554 20.8511 31.5616 21.2618 31.5587 21.6647C31.5575 21.8303 31.691 21.9647 31.8566 21.9647H35.1851C35.6006 21.9647 35.9351 21.6287 35.9351 21.2147V16.3936C35.9351 15.2371 35.9351 14.6566 35.7371 14.1046C35.3951 13.1566 34.6541 12.4186 33.7181 12.0841C33.1571 11.8711 32.5736 11.8711 31.4081 11.8711H16.7082C15.5427 11.8711 14.9592 11.8711 14.4132 12.0796C13.4622 12.4186 12.7212 13.1566 12.3792 14.1046C12.1797 14.6551 12.1797 15.2371 12.1797 16.3936V21.2147C12.1797 21.6287 12.5157 21.9647 12.9297 21.9647Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M38.4752 25.7159C38.1257 24.7379 37.3577 23.9609 36.3347 23.5739C35.7632 23.3789 35.1722 23.3789 34.1012 23.3789H14.0131C12.9421 23.3789 12.3526 23.3789 11.7466 23.5874C10.7596 23.9609 9.99309 24.7364 9.64359 25.7084C9.43359 26.2844 9.43359 26.8769 9.43359 27.9539V35.0039C9.43359 35.6249 9.93759 36.1289 10.5586 36.1289C11.1796 36.1289 11.6836 35.6249 11.6836 35.0039V34.5689C11.6836 34.4032 11.8179 34.2689 11.9836 34.2689H36.1337C36.2993 34.2689 36.4337 34.4032 36.4337 34.5689V35.0039C36.4337 35.6249 36.9377 36.1289 37.5587 36.1289C38.1797 36.1289 38.6837 35.6249 38.6837 35.0039V27.9539C38.6837 26.8769 38.6837 26.2844 38.4752 25.7159Z"
+                  fill="white"
+                />
+              </svg>
+
+              Hotel
+            </div>
+              <a
+              href="/"
+              class="w-[80px] gap-[4px] group hover:bg-secondary-900 hover:shadow-inner h-[84px] bg-transparent rounded-lg flex flex-col justify-center items-center"
+            >
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.7022 37.16V32.5734C19.7022 31.4026 20.6583 30.4535 21.8377 30.4535H26.1489C26.7153 30.4535 27.2585 30.6768 27.6589 31.0744C28.0594 31.472 28.2844 32.0112 28.2844 32.5734V37.16C28.2808 37.6468 28.4731 38.1148 28.8186 38.4603C29.164 38.8057 29.6341 39 30.1244 39H33.0657C34.4395 39.0035 35.7581 38.4643 36.7308 37.5012C37.7034 36.5382 38.25 35.2305 38.25 33.8667V20.8003C38.25 19.6987 37.7581 18.6538 36.9069 17.947L26.901 10.0138C25.1605 8.62284 22.6667 8.66775 20.9781 10.1205L11.2005 17.947C10.3091 18.6329 9.77633 19.681 9.75 20.8003V33.8534C9.75 36.6958 12.0711 39 14.9343 39H17.8084C18.8268 39 19.6545 38.1843 19.6619 37.1733L19.7022 37.16Z"
+                  fill="white"
+                />
+              </svg>
+
+              Blog
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav
+      class="fixed z-40 header-menu translate-x-[1000px] w-screen py-9 overflow-scroll px-5 h-screen bg-primary-800 lg:!hidden transition-all duration-300 ease-in-out top-0 flex flex-col gap-6"
+    >
+      <div class="w-full flex justify-between items-center">
+        <a href="/" class="hover:scale-110">
+          <img
+            src="../../images/logo.png"
+            alt="logo"
+            aria-label="logo"
+            class="lg:!w-[198.28px] lg:!h-[28px] w-[74px] h-[10px]"
+            width="198.28"
+            height="28"
+          />
+        </a>
+        <button class="header-menu-close">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.334 0C17.723 0 20 2.378 20 5.916V14.084C20 17.622 17.723 20 14.333 20H5.665C2.276 20 0 17.622 0 14.084V5.916C0 2.378 2.276 0 5.665 0H14.334ZM14.334 1.5H5.665C3.135 1.5 1.5 3.233 1.5 5.916V14.084C1.5 16.767 3.135 18.5 5.665 18.5H14.333C16.864 18.5 18.5 16.767 18.5 14.084V5.916C18.5 3.233 16.864 1.5 14.334 1.5ZM8.1305 7.0626L9.998 8.93L11.8645 7.0647C12.1575 6.7717 12.6315 6.7717 12.9245 7.0647C13.2175 7.3577 13.2175 7.8317 12.9245 8.1247L11.058 9.99L12.9265 11.8596C13.2195 12.1526 13.2195 12.6266 12.9265 12.9196C12.7805 13.0666 12.5875 13.1396 12.3965 13.1396C12.2045 13.1396 12.0125 13.0666 11.8665 12.9196L9.998 11.05L8.1325 12.9167C7.9865 13.0637 7.7945 13.1367 7.6025 13.1367C7.4105 13.1367 7.2185 13.0637 7.0725 12.9167C6.7795 12.6237 6.7795 12.1497 7.0725 11.8567L8.938 9.99L7.0705 8.1226C6.7775 7.8296 6.7775 7.3556 7.0705 7.0626C7.3645 6.7696 7.8385 6.7696 8.1305 7.0626Z"
+              fill="#fff"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        class="flex w-full !text-white flex-col justify-center items-center gap-20 mt-8"
+      >
+        <!-- <a href="" class="text-sm hover:text-secondary-500">Language</a> -->
+        <a href="" class="text-sm hover:text-secondary-500"
+          >Login or Creat acount</a
+        >
+        <p class="text-sm hover:text-secondary-500">24/7 Support</p>
+      </div>
+    </nav>
+    <main
+      class="w-full flex flex-col gap-6 justify-center items-center my-32 bg-white"
+    >
+      <img src="../../images/404.svg" alt="404-page" class="" />
+      <h1>The requested page was not found.</h1>
+      <a
+        href="/"
+        class="tzone-btn group bg-transparent justify-center items-center cursor-pointer w-[140px] flex h-[49px] relative"
+      >
+        <div
+          class="w-full z-0 h-full hover:bg-primary-700 bg-secondary-900 text-white rounded-lg flex justify-center items-center"
+        >
+          Go Home
+        </div>
+      </a>
+    </main>
+    <footer class="w-full flex flex-col gap-3">
+      <div
+        class="footer-top w-full bg-[#F1FBFF] lg:!h-[118px] h-[286px] flex justify-center items-center"
+      >
+        <div
+          class="px-5 xl:!px-0 lg:px-5 w-full justify-between xl:!w-[1280px] lg:!items-center flex flex-col gap-4 lg:!gap-0 lg:!flex-row"
+        >
+          <div class="flex flex-col gap-5">
+            <a href="/" class="hover:scale-110">
+              <img
+                src="../../images/footer-logo.png"
+                alt="footer-logo"
+                aria-label="footer-logo"
+                class="lg:!w-[176px] lg:!h-[25px] w-[120px] h-[17px]"
+                width="176"
+                height="25"
+              />
+            </a>
+            <p class="text-sm text-primary-200">
+              Receive pricing updates, shopping tips & more!
+            </p>
+          </div>
+          <div class="flex">
+            <button
+              class="tzone-btn group bg-transparent justify-center items-center cursor-pointer w-[140px] flex h-[49px] relative"
+            >
+              <div
+                class="w-full z-0 h-full hover:bg-primary-700 bg-secondary-900 text-white rounded-lg flex justify-center items-center"
+              >
+                Send
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer-bottom w-full bg-[#F1FBFF] flex justify-center items-center"
+      >
+        <div
+          class="px-5 xl:!px-0 lg:px-5 w-full flex-col gap-4 xl:!w-[1280px] items-center flex"
+        >
+          <div
+            class="w-full flex justify-between py-6 max-md:!flex-wrap max-md:!gap-10"
+          >
+            <div class="flex flex-col gap-4 max-md:!w-full">
+              <p class="lg:!font-bold text-xl text-primary-900">About us:</p>
+              <p
+                class="text-sm text-primary-900 lg:!w-[535px] w-full lg:!line-clamp-5 mb-4"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae
+                congue mauris rhoncus aenean vel elit scelerisque. In egestas
+                erat imperdiet sed euismod nisi porta lorem mollis. Morbi
+                tristique senectus et netus. Mattis pellentesque id nibh tortor
+                id aliquet lectus proin.
+              </p>
+              <div class="flex flex-col gap-4">
+                <a
+                  href="tel:"
+                  class="flex gap-2 text-primary-900 hover:text-primary-400 items-center"
+                >
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_93_1431)">
+                      <path
+                        d="M1.86744 1.13266C2.25855 0.741552 2.71188 0.563774 3.22744 0.59933C3.74299 0.634886 4.16077 0.865996 4.48077 1.29266L6.2941 3.586C6.47188 3.79933 6.58744 4.03933 6.64077 4.306C6.6941 4.57266 6.68521 4.83044 6.6141 5.07933L6.08077 7.266C6.00966 7.51488 6.06299 7.72822 6.24077 7.906L8.6941 10.3593C8.87188 10.5371 9.08521 10.5904 9.3341 10.5193L11.5208 9.986C11.7697 9.91488 12.0274 9.906 12.2941 9.95933C12.5608 10.0127 12.8008 10.1282 13.0141 10.306L15.3074 12.1193C15.7341 12.4393 15.9652 12.8571 16.0008 13.3727C16.0363 13.8882 15.8585 14.3416 15.4674 14.7327L14.4541 15.746C14.063 16.1371 13.6097 16.3949 13.0941 16.5193C12.5785 16.6438 12.0719 16.6171 11.5741 16.4393C8.90744 15.5149 6.56966 14.0482 4.56077 12.0393C2.55188 10.0304 1.08521 7.69266 0.160769 5.026C-0.0170088 4.52822 -0.0436754 4.02155 0.080769 3.506C0.205213 2.99044 0.462991 2.53711 0.854102 2.146L1.86744 1.13266Z"
+                        fill="#110F5A"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_93_1431">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="matrix(1 0 0 -1 0 16.6001)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  +012 345 67890
+                </a>
+                <a
+                  href="mailto:"
+                  class="flex gap-2 text-primary-900 hover:text-primary-400 items-center"
+                >
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.0533333 4.17411C0.16 3.71189 0.391111 3.32966 0.746667 3.02744C1.10222 2.72522 1.51111 2.57411 1.97333 2.57411H14.0267C14.4889 2.57411 14.8978 2.72522 15.2533 3.02744C15.6089 3.32966 15.84 3.71189 15.9467 4.17411L8 9.02744L0.0533333 4.17411ZM0 5.29411V12.3874L5.81333 8.86744L0 5.29411ZM6.77333 9.45411L0.213333 13.4541C0.355556 13.8097 0.595556 14.0941 0.933333 14.3074C1.27111 14.5208 1.61778 14.6274 1.97333 14.6274H14.0267C14.3822 14.6274 14.7289 14.5208 15.0667 14.3074C15.4044 14.0941 15.6444 13.8097 15.7867 13.4541L9.22667 9.45411L8 10.2008L6.77333 9.45411ZM10.1867 8.86744L16 12.3874V5.29411L10.1867 8.86744Z"
+                      fill="#110F5A"
+                    />
+                  </svg>
+
+                  cxqxs@example.com
+                </a>
+
+                <p class="flex gap-2 text-primary-900 items-center">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_93_1441)">
+                      <path
+                        d="M7.99932 16.6001C8.31932 16.2801 8.63932 15.9601 8.95932 15.6401C9.70599 14.8579 10.3815 14.0579 10.986 13.2401C11.8749 12.0668 12.5682 10.9823 13.066 9.98676C13.706 8.70676 14.026 7.56899 14.026 6.57343C14.026 5.50676 13.7504 4.51121 13.1993 3.58676C12.6482 2.66232 11.9193 1.93343 11.0127 1.4001C10.106 0.866764 9.10155 0.600098 7.99932 0.600098C6.8971 0.600098 5.89266 0.866764 4.98599 1.4001C4.07932 1.93343 3.35043 2.66232 2.79932 3.58676C2.24821 4.51121 1.97266 5.50676 1.97266 6.57343C1.97266 7.56899 2.29266 8.70676 2.93266 9.98676C3.43043 10.9823 4.12377 12.0668 5.01266 13.2401C5.6171 14.0579 6.29266 14.8579 7.03932 15.6401L7.99932 16.6001ZM7.99932 9.61343C7.18155 9.61343 6.47932 9.3201 5.89266 8.73343C5.30599 8.14676 5.01266 7.43565 5.01266 6.6001C5.01266 5.76454 5.30599 5.05343 5.89266 4.46676C6.47932 3.8801 7.18155 3.58676 7.99932 3.58676C8.8171 3.58676 9.51932 3.8801 10.106 4.46676C10.6927 5.05343 10.986 5.76454 10.986 6.6001C10.986 7.43565 10.6927 8.14676 10.106 8.73343C9.51932 9.3201 8.8171 9.61343 7.99932 9.61343Z"
+                        fill="#110F5A"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_93_1441">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="matrix(1 0 0 -1 0 16.6001)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  123 Street, New York, USA
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <p class="text-xl text-primary-900 lg:!font-bold">Catg...</p>
+              <div
+                class="text-sm text-primary-900 hover:text-secondary-600 cursor-pointer"
+              >
+                Hotel
+              </div>
+              <a
+                href=""
+                class="text-sm text-primary-900 hover:text-secondary-600 cursor-pointer"
+                >Holidays</a
+              >
+            </div>
+
+            <div class="flex flex-col gap-4 max-md:mr-6">
+              <p class="text-xl text-primary-900 lg:!font-bold">Company</p>
+
+              <a
+                href=""
+                class="text-sm text-primary-900 hover:text-secondary-600 cursor-pointer"
+                >Blog</a
+              >
+              <a
+                href=""
+                class="text-sm text-primary-900 hover:text-secondary-600 cursor-pointer"
+                >About us</a
+              >
+              <a
+                href=""
+                class="text-sm text-primary-900 hover:text-secondary-600 cursor-pointer"
+                >Contact us</a
+              >
+            </div>
+
+            <div class="flex flex-col gap-4 max-md:!w-full">
+              <p class="text-xl text-primary-900 lg:!font-bold">Falow us:</p>
+
+              <div class="max-md:!w-full max-md:!flex max-md:!justify-center">
+                <div class="grid grid-cols-3 gap-2 w-[90%] lg:w-[256px]">
+                  <img
+                    src="../../images/footer1.png"
+                    alt="footer-1"
+                    class="rounded-sm h-[80px] w-full"
+                  />
+                  <img
+                    src="../../images/footer2.png"
+                    alt="footer-2"
+                    class="rounded-sm h-[80px] w-full"
+                  />
+
+                  <img
+                    src="../../images/footer3.png"
+                    alt="footer-3"
+                    class="rounded-sm h-[80px] w-full"
+                  />
+
+                  <img
+                    src="../../images/footer4.png"
+                    alt="footer-4"
+                    class="rounded-sm h-[80px] w-full"
+                  />
+
+                  <img
+                    src="../../images/footer5.png"
+                    alt="footer-5"
+                    class="rounded-sm h-[80px] w-full"
+                  />
+
+                  <img
+                    src="../../images/footer6.png"
+                    alt="footer-6"
+                    class="rounded-sm h-[80px] w-full"
+                  />
+                </div>
+              </div>
+              <div class="flex w-full justify-between items-center">
+                <a
+                  href="facebook"
+                  class="hover:bg-secondary-600 w-10 h-10 flex justify-center items-center rounded-full"
+                >
+                  <svg
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.6373 9.11255H5.44003V15.675H2.51034V9.11255H0.108V6.41724H2.51034V4.33716C2.51034 1.99341 3.91659 0.675049 6.05527 0.675049C7.08066 0.675049 8.16464 0.880127 8.16464 0.880127V3.19458H6.96347C5.79159 3.19458 5.44003 3.89771 5.44003 4.65942V6.41724H8.04745L7.6373 9.11255Z"
+                      fill="#110F5A"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="hover:bg-secondary-600 w-10 h-10 flex justify-center items-center rounded-full"
+                  href="insta"
+                  ><svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.1705 3.80591C9.0162 3.80591 10.5396 5.32935 10.5396 7.17505C10.5396 9.05005 9.0162 10.5442 7.1705 10.5442C5.2955 10.5442 3.80136 9.05005 3.80136 7.17505C3.80136 5.32935 5.2955 3.80591 7.1705 3.80591ZM7.1705 9.37231C8.37167 9.37231 9.33847 8.40552 9.33847 7.17505C9.33847 5.97388 8.37167 5.00708 7.1705 5.00708C5.94003 5.00708 4.97323 5.97388 4.97323 7.17505C4.97323 8.40552 5.96933 9.37231 7.1705 9.37231ZM11.4478 3.68872C11.4478 4.12817 11.0963 4.47974 10.6568 4.47974C10.2174 4.47974 9.86581 4.12817 9.86581 3.68872C9.86581 3.24927 10.2174 2.89771 10.6568 2.89771C11.0963 2.89771 11.4478 3.24927 11.4478 3.68872ZM13.6744 4.47974C13.733 5.56372 13.733 8.81567 13.6744 9.89966C13.6158 10.9543 13.3814 11.8625 12.6197 12.6536C11.858 13.4153 10.9205 13.6497 9.86581 13.7083C8.78183 13.7668 5.52987 13.7668 4.44589 13.7083C3.3912 13.6497 2.483 13.4153 1.69198 12.6536C0.930265 11.8625 0.69589 10.9543 0.637297 9.89966C0.578703 8.81567 0.578703 5.56372 0.637297 4.47974C0.69589 3.42505 0.930265 2.48755 1.69198 1.72583C2.483 0.964111 3.3912 0.729736 4.44589 0.671143C5.52987 0.612549 8.78183 0.612549 9.86581 0.671143C10.9205 0.729736 11.858 0.964111 12.6197 1.72583C13.3814 2.48755 13.6158 3.42505 13.6744 4.47974ZM12.2682 11.0422C12.6197 10.1926 12.5318 8.14185 12.5318 7.17505C12.5318 6.23755 12.6197 4.18677 12.2682 3.30786C12.0338 2.75122 11.5943 2.28247 11.0377 2.07739C10.1588 1.72583 8.108 1.81372 7.1705 1.81372C6.2037 1.81372 4.15292 1.72583 3.30331 2.07739C2.71737 2.31177 2.27792 2.75122 2.04355 3.30786C1.69198 4.18677 1.77987 6.23755 1.77987 7.17505C1.77987 8.14185 1.69198 10.1926 2.04355 11.0422C2.27792 11.6282 2.71737 12.0676 3.30331 12.302C4.15292 12.6536 6.2037 12.5657 7.1705 12.5657C8.108 12.5657 10.1588 12.6536 11.0377 12.302C11.5943 12.0676 12.0631 11.6282 12.2682 11.0422Z"
+                      fill="#110F5A"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="linked"
+                  class="hover:bg-secondary-600 w-10 h-10 flex justify-center items-center rounded-full"
+                  ><svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.53769 13.8H0.813078V5.04028H3.53769V13.8ZM2.16073 3.86841C1.31112 3.86841 0.608 3.13599 0.608 2.25708C0.608 1.40747 1.31112 0.704346 2.16073 0.704346C3.03964 0.704346 3.74277 1.40747 3.74277 2.25708C3.74277 3.13599 3.03964 3.86841 2.16073 3.86841ZM13.7037 13.8H11.0084V9.552C11.0084 8.52661 10.9791 7.23755 9.57284 7.23755C8.16659 7.23755 7.96152 8.32153 7.96152 9.46411V13.8H5.23691V5.04028H7.84433V6.24146H7.87362C8.25448 5.56763 9.13339 4.83521 10.4517 4.83521C13.2057 4.83521 13.733 6.65161 13.733 8.99536V13.8H13.7037Z"
+                      fill="#110F5A"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="twit"
+                  class="hover:bg-secondary-600 w-10 h-10 flex justify-center items-center rounded-full"
+                  ><svg
+                    width="16"
+                    height="13"
+                    viewBox="0 0 16 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.1348 3.12817C14.1348 3.27466 14.1348 3.39185 14.1348 3.53833C14.1348 7.6106 11.0586 12.2688 5.4043 12.2688C3.64648 12.2688 2.03516 11.7708 0.6875 10.8918C0.921875 10.9211 1.15625 10.9504 1.41992 10.9504C2.85547 10.9504 4.17383 10.4524 5.22852 9.63208C3.88086 9.60278 2.73828 8.72388 2.35742 7.49341C2.5625 7.52271 2.73828 7.552 2.94336 7.552C3.20703 7.552 3.5 7.49341 3.73438 7.43481C2.32812 7.14185 1.27344 5.91138 1.27344 4.41724V4.38794C1.68359 4.62231 2.18164 4.7395 2.67969 4.7688C1.83008 4.21216 1.30273 3.27466 1.30273 2.21997C1.30273 1.63403 1.44922 1.10669 1.71289 0.667236C3.23633 2.51294 5.52148 3.74341 8.07031 3.88989C8.01172 3.65552 7.98242 3.42114 7.98242 3.18677C7.98242 1.48755 9.35938 0.110596 11.0586 0.110596C11.9375 0.110596 12.7285 0.462158 13.3145 1.07739C13.9883 0.930908 14.6621 0.667236 15.248 0.315674C15.0137 1.0481 14.5449 1.63403 13.9004 2.01489C14.5156 1.9563 15.1309 1.78052 15.6582 1.54614C15.248 2.16138 14.7207 2.68872 14.1348 3.12817Z"
+                      fill="#110F5A"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center pb-6 gap-5 w-full lg:!flex-row flex-col-reverse"
+          >
+            <div
+              class="lg:!w-[14%] w-full flex lg:!justify-start justify-center"
+            >
+              <a
+                class="text-primary-400 hover:text-primary-700 lg:!whitespace-nowrap text-xs text-center lg:!text-start"
+                href="https://basisfly.ae/"
+                target="_blank"
+              >
+                Web Design&nbsp;&amp;&nbsp;Online Reservation By</a
+              >
+            </div>
+            <div
+              class="flex items-center w-full lg:!w-[86%] justify-center gap-1 lg:!justify-between"
+            >
+              <a href="https://basisfly.ae/" target="_blank">
+                <img
+                  loading="lazy"
+                  width="102"
+                  height="26"
+                  class="w-[68px] h-[17px]"
+                  src="https://cdn.basiscore.net/babanowrouz.com/images/basisfly-logo.png"
+                  alt="basisfly-logo"
+                  aria-label="basisfly-logo"
+                />
+              </a>
+              <img
+                loading="lazy"
+                width="135"
+                height="23"
+                src="http://cdn.basiscore.net/flyalrafah.travel/images/trust-logo.png"
+                alt="Trust_logo"
+                class="w-[68px] h-[14px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://cdn.basiscore.net/basisfly.com/js/swiper-bundle.min.js"></script>
+  <script src="../../js/ticketZone-core.js"></script>
+</html>
