@@ -1,0 +1,685 @@
+<basis core="dbsource" source="basiscore" mid="20" name="db" lid="1">
+    <member name="p-li" type="tree" request="cat" parentid="212649" size="249x297" />
+  </basis>
+  
+  
+  <basis core="dbsource" source="basiscore" lid="1" mid="1" name="db" catid="213130">
+    <member link="article.bc" name="services-list" type="list" propertyid=" 3087425 , 3087422 , 3087423 , 3087424 ,3087428,7245" perpage=""
+      typeid="159" size="419x239" order="ord" />
+  </basis>
+  
+  
+  <basis core="dbsource" source="basiscore" lid="1" mid="1" name="db" usedforid="2373728">
+    <member name="introduction" type="view" propertyid="7244" perpage="" typeid="159" order="ord" />
+  </basis>
+  
+  
+  <basis core="dbsource" source="basiscore" lid="1" mid="1" name="db" catid="213226">
+    <member name="blgs-section" type="list" propertyid="" perpage="" typeid="159" size="419x239" order="ord" />
+  </basis>
+  
+  
+  
+  
+  
+  
+  <basis core="dbsource" source="basiscore" lid="1" mid="1" name="db" catid="213225">
+    <member name="faq-section" type="list" propertyid="" perpage="" typeid="159" order="ord" />
+  </basis>
+  
+  <basis core="dbsource" source="basiscore" lid="1" mid="20" name="db" catid="213128">
+    <member name="tours-list" link="tour.bc" type="list" propertyid=" 3087425 , 3087422 , 3087423 , 3087424 ,3087428,8181,10000504,8076"
+       perpage=""  typeid="159" size="311x358" order="ord" />
+  </basis>
+  
+  
+  
+  
+  
+  
+  <basis core="dbsource" source="basiscore" mid="20" name="list" lid="1" schemaid="987" term="[##cms.query.term##]">
+    <member name="airline" type="list" request="spelist" />
+  </basis>
+  
+  
+  
+  
+  <basis core="inlinesource" name="joining">
+    <member name="list" lefttblcol="db.tours-list.prp_10000504" righttblcol="list.airline.name" format="join"
+      jointype="leftjoin" />
+  </basis>
+  
+  <basis core="dbsource" source="basiscore" lid="1" mid="1" name="db" catid="212638">
+    <member 
+    name="blogs-list" 
+    type="list" 
+    link="article.bc" 
+    propertyid="7244"
+    typeid="159" 
+    order="ord" 
+    size="305x186" />
+  </basis>
+  
+  
+  
+  
+  
+  
+  
+  <!DOCTYPE html>
+  <html lang="fa" dir="rtl">
+  
+  <head>
+   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
+  <!-- Title & Description -->
+  <title>سینداد سیر</title>
+  <meta name="description" content="سینداد سیر">
+  <!-- canonical for Homepage -->
+  <link rel="canonical" href="[##cms.request.:scheme##]://[##cms.request.full-url##]" />
+  <!-- fill items with Agancy Info -->
+  <meta name="og:locale" content="fa_IR">
+  <meta property="og:title" content="آژانس گردشگری سینداد سیر">
+  <meta property="og:url" content="[##cms.request.:scheme##]://[##cms.request.full-url##]">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="سینداد سیر">
+  <meta property="og:image" content="[##cms.cms.cdn##]/images/logo.png">
+  <meta property="og:image:alt" content="لوگو شرکت سینداد سیر">
+  <meta property="og:description"
+      content=".شرکت سینداد سیر با تمرکز بر ارائه خدمات به روز و اختصاصی به متقاضیان جهت تسهیل و تسریع و افزایش کیفیت تمامی خدمات مسافرتی و کسب رضایت مشتریان خود به صورت تمام وقت با همراهی نیروهای مجرب و متخصص در سریع ترین زمان ممکن خدمات درخواستی را ارائه می نماید">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:type" content="image/png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content=" ">
+  <meta name="twitter:creator" content="Sindad Sair">
+  <meta name="twitter:image" content="[##cms.cms.cdn##]/images/logo.png">
+  <meta name="twitter:title" content=" ">
+  <meta name="twitter:description" content=" ">
+  <meta property="seo:robots" content="index, follow" />
+  <!-- samandehi-enamad optional -->
+  <meta name="enamad" content="" />
+  <meta name="samandehi" content="" />
+  <!-- pwa metatags -->
+  <basis core="call" file="pwa.inc" />
+  <!-- define -->
+  <link rel="preload" as="image" imageSrcSet="[##cms.cms.cdn##]/search-bg.png" fetchpriority="high" />
+  <!-- common styles for all page -->
+  <basis core="call" file="style.inc" />
+  
+    <link rel="stylesheet" href="https://cdn.basiscore.net/basisfly.com/css/swiper-bundle.min.css" />
+    <link href="https://cdn.basiscore.net/basisfly.com/css/reservation_multiLang_css_calendar.css" type="text/css"
+      rel="stylesheet" />
+  </head>
+  
+  <body class="" onload="loadContentHomaPage()">
+    <basis core="call" file="header.inc" />
+    <main class="flex flex-col overflow-hidden gap-12 w-full">
+      <h1 class="hidden">سینداد</h1>
+      <section class="w-full px-5 search-box-container">
+        <div
+          class="bg-[url('[##cms.cms.cdn##]/images/search-bg.jFIF')] bg-search-home bg-no-repeat bg-center w-full justify-center items-center bg-cover flex flex-col gap-5 px-5 xl:px-44 2xl:px-56 py-24 rounded-[42px]">
+          <h2 class="text-gradiant text-[64px] font-bold leading-[70px]">
+            بهترین ها رو با ما تجربه کنید
+          </h2>
+          <basis core="view" datamembername="db.introduction">
+            <face filter="prpID=7244">
+              <div class="text-white text-lg line-clamp-1">
+                @largetext
+              </div>
+            </face>
+          </basis>
+  
+         <div class="w-full " id="search-box">
+            <div class="h-[200px] w-full flex justify-center items-center">
+              <span class="loader"></span>
+            </div>
+          </div> 
+        </div>
+      </section>
+      <section class="w-full px-5 xl:px-44 2xl:px-56 flex justify-between items-center">
+        <div class="flex text-center group flex-col gap-3 hover:text-primary-900 font-bold">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M19.7223 10.9009C17.9519 10.9009 16.4331 12.155 16.0932 13.8898L15.3371 17.7656C14.8882 20.0525 16.6413 22.1741 18.9663 22.1741H33.1204C35.4483 22.1741 37.1952 20.0499 36.7498 17.7666L35.9935 13.8898C35.6531 12.1533 34.1308 10.9009 32.3623 10.9009H19.7223ZM19.1598 14.4908C19.2131 14.2189 19.4496 14.0259 19.7223 14.0259H32.3623C32.6368 14.0259 32.8739 14.2207 32.9268 14.4908L33.6827 18.365C33.7521 18.7208 33.4802 19.0491 33.1204 19.0491H18.9663C18.604 19.0491 18.3344 18.719 18.4036 18.3673L19.1598 14.4908Z"
+              fill="#000000" class="group-hover:fill-primary-900" />
+            <path
+              d="M18.0022 25.3529C16.9137 25.3529 16.0322 26.2356 16.0322 27.3231C16.0322 28.4106 16.9137 29.2931 18.0022 29.2931C19.0896 29.2931 19.9725 28.4119 19.9725 27.3231C19.9725 26.2344 19.0896 25.3529 18.0022 25.3529Z"
+              fill="#000000" class="group-hover:fill-primary-900" />
+            <path
+              d="M34.0833 25.3529C32.9947 25.3529 32.1133 26.2356 32.1133 27.3231C32.1133 28.4106 32.9947 29.2931 34.0833 29.2931C35.1706 29.2931 36.0535 28.4119 36.0535 27.3231C36.0535 26.2344 35.1706 25.3529 34.0833 25.3529Z"
+              fill="#000000" class="group-hover:fill-primary-900" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.7752 4.6875C14.2361 4.6875 10.3947 8.03921 9.78012 12.5368L7.90922 26.2269C7.28774 30.7796 10.1402 34.916 14.3016 36.1569L11.8516 39.7335C11.7861 39.8115 11.7281 39.896 11.6787 39.9858L9.7052 42.8671C9.21753 43.579 9.39935 44.5515 10.1113 45.0392C10.8232 45.5267 11.7957 45.345 12.2833 44.6329L13.8815 42.3H38.2085L39.8066 44.6329C40.2943 45.345 41.2668 45.5267 41.9787 45.0392C42.6908 44.5515 42.8724 43.579 42.3847 42.8671L40.382 39.9431C40.3466 39.8833 40.3074 39.826 40.2647 39.7719L37.7874 36.1554C41.947 34.9127 44.7953 30.7775 44.1741 26.2267L42.3033 12.5368C41.6887 8.03921 37.8472 4.6875 33.3083 4.6875H18.7752ZM16.022 39.175L17.831 36.5342H34.2589L36.0681 39.175H16.022ZM12.8763 12.9599C13.2793 10.0105 15.7983 7.8125 18.7752 7.8125H33.3083C36.2851 7.8125 38.8041 10.0105 39.207 12.9599L41.0778 26.6498C41.566 30.2256 38.7883 33.4092 35.1791 33.4092H16.9043C13.2968 33.4092 10.5176 30.2252 11.0055 26.6496L12.8763 12.9599Z"
+              fill="#000000" class="group-hover:fill-primary-900" />
+          </svg>
+          قطار
+        </div>
+  
+        <div class="flex text-center group flex-col gap-3 hover:text-primary-900 font-bold">
+          <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.04704 13.3574C8.04706 10.3198 10.6121 7.85742 13.7762 7.85742H38.2634C41.4276 7.85742 43.9926 10.3198 43.9926 13.3574L43.9928 42.1816C43.9928 44.1148 42.3605 45.6818 40.347 45.6818H37.3742C36.0776 45.6818 34.8784 45.0206 34.2251 43.9452L33.4157 42.6132C33.3224 42.4596 33.1511 42.3652 32.9657 42.3652H19.0681C18.8829 42.3652 18.7116 42.4596 18.6182 42.6132L17.8088 43.9452C17.1555 45.0206 15.9563 45.6818 14.6596 45.6818H11.6927C9.67915 45.6818 8.04685 44.1146 8.04688 42.1816L8.04704 13.3574ZM13.7762 10.8574C12.338 10.8574 11.172 11.9767 11.172 13.3574L11.1719 42.1818C11.1719 42.4578 11.4051 42.6818 11.6927 42.6818H14.6596C14.8449 42.6818 15.0162 42.5872 15.1095 42.4336L15.9189 41.1016C16.5723 40.0264 17.7714 39.3652 19.0681 39.3652H32.9657C34.2626 39.3652 35.4615 40.0264 36.1151 41.1016L36.9245 42.4336C37.0178 42.5872 37.189 42.6818 37.3742 42.6818H40.347C40.6345 42.6818 40.8678 42.4578 40.8678 42.1818L40.8676 13.3574C40.8676 11.9767 39.7015 10.8574 38.2634 10.8574H13.7762Z"
+              fill="black" class="group-hover:fill-primary-900" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.07112 29.1809C8.19878 28.3617 8.99414 27.7969 9.84757 27.9193C20.7077 29.4789 31.3023 29.4813 42.1931 27.9193C43.0467 27.7969 43.8419 28.3619 43.9694 29.1813C44.0969 30.0005 43.5083 30.7641 42.6548 30.8865C31.4579 32.4923 20.5518 32.4899 9.38526 30.8863C8.53182 30.7639 7.94345 30.0003 8.07112 29.1809Z"
+              fill="black" class="group-hover:fill-primary-900" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.18733 20.1753C6.05027 20.1752 6.7499 20.8467 6.75 21.6752L6.75042 25.1986C6.7505 26.0272 6.05102 26.6988 5.18808 26.6988C4.32515 26.699 3.6255 26.0274 3.62542 25.199L3.625 21.6754C3.6249 20.847 4.32437 20.1754 5.18733 20.1753ZM46.8535 20.1753C47.7165 20.1752 48.4163 20.8467 48.4163 21.6752L48.4167 25.1986C48.4167 26.0272 47.7173 26.6988 46.8544 26.6988C45.9915 26.699 45.2917 26.0274 45.2917 25.199L45.2913 21.6754C45.2913 20.847 45.9906 20.1754 46.8535 20.1753Z"
+              fill="black" class="group-hover:fill-primary-900" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.04688 15.2368C8.04688 14.4084 8.74644 13.7368 9.60938 13.7368H42.4299C43.2928 13.7368 43.9924 14.4084 43.9924 15.2368C43.9924 16.0652 43.2928 16.7368 42.4299 16.7368H9.60938C8.74644 16.7368 8.04688 16.0652 8.04688 15.2368Z"
+              fill="black" class="group-hover:fill-primary-900" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M35.542 35.8903C35.542 35.0619 36.2416 34.3903 37.1045 34.3903H38.1122C38.9751 34.3903 39.6747 35.0619 39.6747 35.8903C39.6747 36.7187 38.9751 37.3903 38.1122 37.3903H37.1045C36.2416 37.3903 35.542 36.7187 35.542 35.8903Z"
+              fill="black" class="group-hover:fill-primary-900" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12.3662 35.8903C12.3662 35.0619 13.0658 34.3903 13.9287 34.3903H14.9364C15.7993 34.3903 16.4989 35.0619 16.4989 35.8903C16.4989 36.7187 15.7993 37.3903 14.9364 37.3903H13.9287C13.0658 37.3903 12.3662 36.7187 12.3662 35.8903Z"
+              fill="black" class="group-hover:fill-primary-900" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M19.4199 35.8903C19.4199 35.0619 20.1195 34.3903 20.9824 34.3903H31.0588C31.9219 34.3903 32.6213 35.0619 32.6213 35.8903C32.6213 36.7187 31.9219 37.3903 31.0588 37.3903H20.9824C20.1195 37.3903 19.4199 36.7187 19.4199 35.8903Z"
+              fill="black" class="group-hover:fill-primary-900" />
+          </svg>
+  
+          اتوبوس
+        </div>
+  
+        <div class="flex text-center group flex-col gap-3 hover:text-primary-900 font-bold">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M39.5811 23.4413V33.1992C39.5811 37.9748 36.8657 40.9488 32.0942 40.9488H17.9152C13.1437 40.9488 10.4189 37.9748 10.4189 33.1971V23.4413C10.4189 18.6658 13.1432 15.6942 17.9147 15.6942H32.0934C36.865 15.6942 39.5811 18.68 39.5811 23.4413Z"
+              stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+              class="group-hover:stroke-primary-900" />
+            <path d="M17.9199 33.8548V23.0692" stroke="black" stroke-width="3" stroke-linecap="round"
+              stroke-linejoin="round" class="group-hover:stroke-primary-900" />
+            <path d="M25.0039 33.8548V23.0692" stroke="black" stroke-width="3" stroke-linecap="round"
+              stroke-linejoin="round" class="group-hover:stroke-primary-900" />
+            <path d="M32.1006 33.8548V23.0692" stroke="black" stroke-width="3" stroke-linecap="round"
+              stroke-linejoin="round" class="group-hover:stroke-primary-900" />
+            <path d="M32.095 40.9485L32.0952 43.7497M17.916 40.9485L17.9162 43.7497" stroke="black" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-primary-900" />
+            <path
+              d="M31.323 15.6937V9.64723C31.323 7.77023 29.8027 6.25 27.9277 6.25H22.0759C20.2009 6.25 18.6807 7.77023 18.6807 9.64723V15.6937"
+              stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+              class="group-hover:stroke-primary-900" />
+          </svg>
+  
+          تور
+        </div>
+  
+        <div class="flex text-center group flex-col gap-3 hover:text-primary-900 font-bold">
+          <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.5654 37.6383L25.5696 37.6591" stroke="black" stroke-width="3" stroke-linecap="round"
+              stroke-linejoin="round" class="group-hover:stroke-primary-900" />
+            <path d="M25.5654 26.4323L25.5696 26.4531" stroke="black" class="group-hover:stroke-primary-900"
+              stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M25.5654 32.0962L25.5696 32.117" stroke="black" class="group-hover:stroke-primary-900"
+              stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M33.4346 37.6383L33.4385 37.6591" stroke="black" class="group-hover:stroke-primary-900"
+              stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M33.4346 26.4323L33.4385 26.4531" stroke="black" stroke-width="3"
+              class="group-hover:stroke-primary-900" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M33.4346 32.0962L33.4385 32.117" stroke="black" class="group-hover:stroke-primary-900"
+              stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M8.7334 43.75H44.2287" stroke="black" stroke-width="3" class="group-hover:stroke-primary-900"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M41.3025 43.746V23.0621C41.3025 20.7838 39.4558 18.9371 37.1775 18.9371H21.8612C19.583 18.9371 17.7363 20.7838 17.7363 23.0621V43.746"
+              stroke="black" class="group-hover:stroke-primary-900" stroke-width="3" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M23.4493 12.858L23.4514 12.8788M17.582 12.858L17.5841 12.8788" stroke="black"
+              class="group-hover:stroke-primary-900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M11.6553 43.744V10.377C11.6553 8.0946 13.5019 6.25 15.7843 6.25H25.3924C27.6749 6.25 29.5215 8.0946 29.5215 10.377V18.9351"
+              stroke="black" class="group-hover:stroke-primary-900" stroke-width="3" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+  
+          هتل
+        </div>
+  
+        <div class="flex text-center group flex-col gap-3 hover:text-primary-900 font-bold">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.99134 40.5308L23.0805 12.5293C23.9036 11.001 26.0967 11.001 26.9199 12.5293L42.009 40.5308C42.7913 41.9842 41.7394 43.7456 40.0894 43.7456H9.91095C8.26095 43.7456 7.2089 41.9842 7.99134 40.5308Z"
+              stroke="black" class="group-hover:stroke-primary-900" stroke-width="3" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M28.516 7.80847L25.001 11.3233L21.4883 7.80847" stroke="black" class="group-hover:stroke-primary-900"
+              stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M25 11.3237V6.25" stroke="black" class="group-hover:stroke-primary-900" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M18.1514 43.75L25.0008 31.0425L31.8501 43.75" stroke="black" class="group-hover:stroke-primary-900"
+              stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M17.6152 22.575L21.0024 25.6458L24.9915 22.054L28.9809 25.6458L32.3882 22.575" stroke="black"
+              class="group-hover:stroke-primary-900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+  
+          اقامتگاه
+        </div>
+      </section>
+  
+      <basis core="list" datamembername="db.p-li">
+        <layout>
+          <section class="w-full px-5 xl:px-44 2xl:px-56">
+            <div class="w-full pb-14 border-b border-zinc-400">
+              <h3 class="text-2xl text-zinc-900 font-bold translate-y-11">
+                مقاصد پر بازدید
+              </h3>
+              <div class="first-swiper pb-9 overflow-hidden flex flex-col w-full">
+                <div class="first-swiper-nav w-full flex mb-8 z-30 items-center gap-3 justify-end">
+                  <div
+                    class="swiper-button-prev-first group !cursor-pointer rounded-full bg-zinc-200 w-12 h-12 flex items-center justify-center">
+                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.49998 0.715245L9.91394 9.12924L1.49998 17.5432L0.0859793 16.1292L7.08598 9.12924L0.0859781 2.12924L1.49998 0.715245Z"
+                        fill="#71717A" class="group-hover:fill-primary-600" />
+                    </svg>
+                  </div>
+                  <div
+                    class="swiper-button-next-first group !cursor-pointer rounded-full bg-zinc-200 w-12 h-12 flex items-center justify-center">
+                    <span>
+                      <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.4999 17.5432L0.085939 9.12924L8.4999 0.715239L9.9139 2.12924L2.9139 9.12924L9.9139 16.1292L8.4999 17.5432Z"
+                          fill="#71717A" class="group-hover:fill-primary-600" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <div class="swiper-wrapper">@child</div>
+              </div>
+            </div>
+          </section>
+        </layout>
+        <face filter="link is null and RowNumber<>1">
+          <div class="swiper-slide relative group !h-[279px] overflow-hidden rounded-xl">
+            <a href="/tour-list.bc?catid=@catid" class="w-full custom-card h-full">
+              <img loading='lazy' src="@image" alt="@title" class="!w-full !h-full" width="246" height="297" />
+              <p class="z-10 text-xl absolute bottom-7 w-full flex justify-center items-center text-white font-bold">
+                @title
+              </p>
+            </a>
+          </div>
+        </face>
+  
+        <face filter="RowNumber<>1">
+          <div class="swiper-slide relative group !h-[279px] overflow-hidden rounded-xl">
+            <a href="@link" class="w-full custom-card h-full">
+              <img loading='lazy' src="@image" alt="@title" class="!w-full !h-full" width="246" height="297" />
+              <p class="z-10 text-xl absolute bottom-7 w-full flex justify-center items-center text-white font-bold">
+                @title
+              </p>
+            </a>
+          </div>
+        </face>
+  
+      </basis>
+  
+  
+      <basis core="list" datamembername="db.services-list">
+        <layout>
+          <section class="w-full py-4 relative px-5 xl:px-44 2xl:px-56">
+            <span class="absolute right-4 -top-24">
+              <img loading='lazy' src="[##cms.cms.cdn##]/images/stars.png" class="!w-[130px] !h-[140px]" width="186"
+                height="193" alt="+" />
+            </span>
+            <div class="second-swiper overflow-hidden flex flex-col w-full">
+              <div class="swiper-wrapper">
+                @child
+  
+              </div>
+            </div>
+          </section>
+        </layout>
+        <face>
+          <div class="swiper-slide flex flex-col gap-6 relative group !h-[321px] overflow-hidden rounded-xl">
+            <a href="@link" class="flex flex-col gap-6  w-full h-full">
+              <img loading='lazy' src="@00419X00239prp" alt="@title" width="419" height="239"
+                class="!w-full !h-[239px] rounded-xl" />
+              <div class="flex gap-4 mt-3 flex-col">
+                <p class="text-xl font-bold text-zinc-900 line-clamp-1">
+                  @title
+                </p>
+                <p class="text-sm line-clamp-1"> @prp_7245 </p>
+              </div>
+            </a>
+          </div>
+        </face>
+        <face filter="link is null">
+          <div class="swiper-slide flex flex-col gap-6 relative group !h-[321px] overflow-hidden rounded-xl">
+            <a href="/article.bc?id=@id" class="flex flex-col gap-6  w-full h-full">
+              <img loading='lazy' src="@00419X00239prp" width="419" height="239" alt="@title"
+                class="!w-full !h-[239px] rounded-xl" />
+              <div class="flex gap-4 mt-3 flex-col">
+                <p class="text-xl font-bold text-zinc-900 line-clamp-1">
+                  @title
+                </p>
+                <p class="text-sm line-clamp-1"> @prp_7245 </p>
+              </div>
+            </a>
+          </div>
+        </face>
+      </basis>
+  
+  
+      <basis core="list" datamembername="joining.list">
+        <layout>
+          <section class="w-full flex flex-col gap-5 pb-4 relative px-5 xl:px-44 2xl:px-56">
+            <div class="flex gap-3 items-center">
+              <h4 class="text-2xl text-zinc-900 font-bold">تورها</h4>
+              <div class="w-[90%] border-t border-dashed border-zinc-400"></div>
+              <a href="/tour-list.bc?catid=213128"
+                class="text-secondary-800 whitespace-nowrap transition-all duration-300 ease-in-out hover:text-primary-700 hover:scale-110 text-base">مشاهده
+                بیشتر</a>
+            </div>
+            <div class="w-full grid grid-cols-4 gap-6">
+              @child
+  
+            </div>
+          </section>
+        </layout>
+        <face>
+          <a href="@db.tours-list.link"
+            class="h-[450px] hover:shadow-lg relative group overflow-hidden justify-start flex flex-col gap-4 rounded-lg border border-zinc-100">
+            <img loading='lazy' class="!w-full h-[358px]" src="@db.tours-list.00311X00358prp" width="311" height="358"
+              alt="@db.tours-list.title" />
+            <div
+              class="absolute w-full h-[358px] flex flex-col justify-between py-7 px-5 top-0 left-0 bg-gradient-to-t from-black-1 to-black-2 from-[3%]">
+              <div class="w-full flex justify-end">
+                <img loading='lazy' class="!w-[79px] h-40p" width="79" height="46" src="@list.airline.pic"
+                  alt="@list.airline.name" />
+              </div>
+              <div class="w-full flex flex-col gap-4">
+                <h5
+                  class="text-white font-semibold group-hover:scale-110 transition-all duration-300 ease-in-out group-hover:text-primary-100 group-hover:-translate-x-2">
+                  @db.tours-list.title
+                </h5>
+                <div class="w-full flex items-center justify-between">
+                  <div class="flex items-center !text-white gap-1">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M13.49 12.956C13.349 13.191 13.1 13.321 12.845 13.321C12.715 13.321 12.582 13.287 12.462 13.214L9.287 11.314C9.06 11.179 8.922 10.934 8.922 10.67V6.581C8.922 6.166 9.258 5.831 9.672 5.831C10.086 5.831 10.422 6.166 10.422 6.581V10.245L13.231 11.927C13.587 12.14 13.703 12.601 13.49 12.956ZM10 0.5C4.761 0.5 0.5 4.762 0.5 10C0.5 15.239 4.761 19.5 10 19.5C15.238 19.5 19.5 15.239 19.5 10C19.5 4.762 15.238 0.5 10 0.5Z"
+                        fill="white" />
+                    </svg>
+                    @db.tours-list.prp_8076
+                  </div>
+                  <div class="flex !text-white items-center gap-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.6497 2C16.0742 1.99901 16.4099 2.32884 16.4109 2.76862L16.4119 3.51824C19.1665 3.73414 20.9862 5.61119 20.9891 8.48975L21 16.9155C21.0039 20.054 19.0322 21.985 15.8718 21.99L8.15189 22C5.0112 22.004 3.01482 20.027 3.01087 16.8795L3.00001 8.55272C2.99606 5.65517 4.75153 3.78311 7.50618 3.53024L7.50519 2.78061C7.5042 2.34083 7.83002 2.01 8.26445 2.01C8.69887 2.009 9.02469 2.33883 9.02567 2.77861L9.02666 3.47826L14.8914 3.47027L14.8904 2.77062C14.8894 2.33084 15.2152 2.001 15.6497 2ZM16.0525 16.1919H16.0426C15.5884 16.2029 15.2241 16.5837 15.234 17.0435C15.235 17.5032 15.6013 17.882 16.0555 17.892C16.5185 17.891 16.8937 17.5102 16.8927 17.0405C16.8927 16.5707 16.5165 16.1919 16.0525 16.1919ZM7.91691 16.1929C7.46274 16.2129 7.1073 16.5937 7.10828 17.0535C7.12902 17.5132 7.5042 17.873 7.95837 17.8521C8.40366 17.8321 8.75811 17.4513 8.73738 16.9915C8.7275 16.5417 8.3612 16.1919 7.91691 16.1929ZM11.9847 16.1879C11.5305 16.2089 11.1761 16.5887 11.1761 17.0485C11.1968 17.5082 11.572 17.8671 12.0262 17.8471C12.4705 17.8261 12.8259 17.4463 12.8052 16.9855C12.7953 16.5367 12.429 16.1869 11.9847 16.1879ZM7.91197 12.5947C7.4578 12.6147 7.10335 12.9955 7.10433 13.4553C7.12408 13.915 7.50025 14.2749 7.95442 14.2539C8.39872 14.2339 8.75317 13.8531 8.73244 13.3933C8.72257 12.9435 8.35725 12.5937 7.91197 12.5947ZM11.9807 12.5597C11.5266 12.5797 11.1711 12.9605 11.1721 13.4203C11.1919 13.8801 11.568 14.2389 12.0222 14.2189C12.4665 14.1979 12.821 13.8181 12.8012 13.3583C12.7904 12.9085 12.425 12.5587 11.9807 12.5597ZM16.0485 12.5647C15.5944 12.5747 15.2389 12.9445 15.2399 13.4043V13.4153C15.2498 13.8751 15.625 14.2239 16.0801 14.2139C16.5244 14.2029 16.8789 13.8221 16.869 13.3623C16.8483 12.9225 16.4918 12.5637 16.0485 12.5647ZM14.8934 5.0095L9.02864 5.01749L9.02962 5.82609C9.02962 6.25687 8.70479 6.5967 8.27037 6.5967C7.83595 6.5977 7.50914 6.25887 7.50914 5.82809L7.50815 5.05847C5.58286 5.25137 4.51754 6.38281 4.52049 8.55072L4.52149 8.86157L19.4696 8.84158V8.49175C19.4272 6.34283 18.349 5.21539 16.4138 5.04748L16.4148 5.81709C16.4148 6.24688 16.0801 6.58771 15.6556 6.58771C15.2212 6.58871 14.8944 6.24888 14.8944 5.81909L14.8934 5.0095Z"
+                        fill="white" />
+                    </svg>
+                    @db.tours-list.date
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between items-center px-5 w-full">
+              <div class="flex flex-col gap-4">
+                <p class="text-zinc-500 text-sm">قیمت از :</p>
+                <p class="text-zinc-800"> @db.tours-list.prp_8181</p>
+              </div>
+              <span class="transition-all duration-300 ease-in-out group-hover:scale-125">
+                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.7499 17.414L0.335938 9L8.7499 0.585999L10.1639 2L3.1639 9L10.1639 16L8.7499 17.414Z"
+                    fill="#007CCD" class="group-hover:!fill-primary-800" />
+                </svg>
+              </span>
+            </div>
+          </a>
+        </face>
+        <face filter="link is null">
+          <a href="/tour.bc?id=@db.tours-list.id"
+            class="h-[450px] hover:shadow-lg relative group overflow-hidden justify-start flex flex-col gap-4 rounded-lg border border-zinc-100">
+            <img loading='lazy' class="!w-full h-[358px]" src="@db.tours-list.00311X00358prp" width="311" height="358"
+              alt="@db.tours-list.title" />
+            <div
+              class="absolute w-full h-[358px] flex flex-col justify-between py-7 px-5 top-0 left-0 bg-gradient-to-t from-black-1 to-black-2 from-[3%]">
+              <div class="w-full flex justify-end">
+                <img loading='lazy' class="!w-[79px] h-40p" width="79" height="46" src="@list.airline.pic"
+                  alt="@list.airline.name" />
+              </div>
+              <div class="w-full flex flex-col gap-4">
+                <h5
+                  class="text-white font-semibold group-hover:scale-110 transition-all duration-300 ease-in-out group-hover:text-primary-100 group-hover:-translate-x-2">
+                  @db.tours-list.title
+                </h5>
+                <div class="w-full flex items-center justify-between">
+                  <div class="flex items-center !text-white gap-1">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M13.49 12.956C13.349 13.191 13.1 13.321 12.845 13.321C12.715 13.321 12.582 13.287 12.462 13.214L9.287 11.314C9.06 11.179 8.922 10.934 8.922 10.67V6.581C8.922 6.166 9.258 5.831 9.672 5.831C10.086 5.831 10.422 6.166 10.422 6.581V10.245L13.231 11.927C13.587 12.14 13.703 12.601 13.49 12.956ZM10 0.5C4.761 0.5 0.5 4.762 0.5 10C0.5 15.239 4.761 19.5 10 19.5C15.238 19.5 19.5 15.239 19.5 10C19.5 4.762 15.238 0.5 10 0.5Z"
+                        fill="white" />
+                    </svg>
+                    @db.tours-list.prp_8076
+                  </div>
+                  <div class="flex !text-white items-center gap-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.6497 2C16.0742 1.99901 16.4099 2.32884 16.4109 2.76862L16.4119 3.51824C19.1665 3.73414 20.9862 5.61119 20.9891 8.48975L21 16.9155C21.0039 20.054 19.0322 21.985 15.8718 21.99L8.15189 22C5.0112 22.004 3.01482 20.027 3.01087 16.8795L3.00001 8.55272C2.99606 5.65517 4.75153 3.78311 7.50618 3.53024L7.50519 2.78061C7.5042 2.34083 7.83002 2.01 8.26445 2.01C8.69887 2.009 9.02469 2.33883 9.02567 2.77861L9.02666 3.47826L14.8914 3.47027L14.8904 2.77062C14.8894 2.33084 15.2152 2.001 15.6497 2ZM16.0525 16.1919H16.0426C15.5884 16.2029 15.2241 16.5837 15.234 17.0435C15.235 17.5032 15.6013 17.882 16.0555 17.892C16.5185 17.891 16.8937 17.5102 16.8927 17.0405C16.8927 16.5707 16.5165 16.1919 16.0525 16.1919ZM7.91691 16.1929C7.46274 16.2129 7.1073 16.5937 7.10828 17.0535C7.12902 17.5132 7.5042 17.873 7.95837 17.8521C8.40366 17.8321 8.75811 17.4513 8.73738 16.9915C8.7275 16.5417 8.3612 16.1919 7.91691 16.1929ZM11.9847 16.1879C11.5305 16.2089 11.1761 16.5887 11.1761 17.0485C11.1968 17.5082 11.572 17.8671 12.0262 17.8471C12.4705 17.8261 12.8259 17.4463 12.8052 16.9855C12.7953 16.5367 12.429 16.1869 11.9847 16.1879ZM7.91197 12.5947C7.4578 12.6147 7.10335 12.9955 7.10433 13.4553C7.12408 13.915 7.50025 14.2749 7.95442 14.2539C8.39872 14.2339 8.75317 13.8531 8.73244 13.3933C8.72257 12.9435 8.35725 12.5937 7.91197 12.5947ZM11.9807 12.5597C11.5266 12.5797 11.1711 12.9605 11.1721 13.4203C11.1919 13.8801 11.568 14.2389 12.0222 14.2189C12.4665 14.1979 12.821 13.8181 12.8012 13.3583C12.7904 12.9085 12.425 12.5587 11.9807 12.5597ZM16.0485 12.5647C15.5944 12.5747 15.2389 12.9445 15.2399 13.4043V13.4153C15.2498 13.8751 15.625 14.2239 16.0801 14.2139C16.5244 14.2029 16.8789 13.8221 16.869 13.3623C16.8483 12.9225 16.4918 12.5637 16.0485 12.5647ZM14.8934 5.0095L9.02864 5.01749L9.02962 5.82609C9.02962 6.25687 8.70479 6.5967 8.27037 6.5967C7.83595 6.5977 7.50914 6.25887 7.50914 5.82809L7.50815 5.05847C5.58286 5.25137 4.51754 6.38281 4.52049 8.55072L4.52149 8.86157L19.4696 8.84158V8.49175C19.4272 6.34283 18.349 5.21539 16.4138 5.04748L16.4148 5.81709C16.4148 6.24688 16.0801 6.58771 15.6556 6.58771C15.2212 6.58871 14.8944 6.24888 14.8944 5.81909L14.8934 5.0095Z"
+                        fill="white" />
+                    </svg>
+                    @db.tours-list.date
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between items-center px-5 w-full">
+              <div class="flex flex-col gap-4">
+                <p class="text-zinc-500 text-sm">قیمت از :</p>
+                <p class="text-zinc-800"> @db.tours-list.prp_8181</p>
+              </div>
+              <span class="transition-all duration-300 ease-in-out group-hover:scale-125">
+                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.7499 17.414L0.335938 9L8.7499 0.585999L10.1639 2L3.1639 9L10.1639 16L8.7499 17.414Z"
+                    fill="#007CCD" class="group-hover:!fill-primary-800" />
+                </svg>
+              </span>
+            </div>
+          </a>
+        </face>
+      </basis>
+  
+      <section class="w-full my-4 pb-6 relative px-5 xl:px-44 2xl:px-56">
+        <span class="absolute left-4 -top-24">
+          <img loading='lazy' src="[##cms.cms.cdn##]/images/stars.png" class="!w-[130px] !h-[140px]" width="186"
+            height="193" alt="+" />
+        </span>
+        <div class="w-full rounded-xl items-center bg-primary-900 flex justify-between py-8 px-10">
+          <div class="flex flex-col gap-6">
+            <p class="text-white text-4xl font-bold">
+              دریافت تخفیف با رزرو اولین تور
+            </p>
+            <p class="text-white">
+              با رزرو اولین ( خرید اولی ) تور کد تخفیف دریافت کنید
+            </p>
+  
+            <a class="hover:scale-110 transition-all ease-in-out duration-300 hover:shadow-xl py-3 bg-secondary-800 rounded-xl text-white flex justify-center items-center w-[161px]"
+              href="/article.bc?id=2373729">
+              دریافت تخفیف
+            </a>
+  
+  
+          </div>
+          <img loading='lazy' class="!h-[154px] w-[176px]" src="[##cms.cms.cdn##]/images/gift.png" alt="gift" />
+        </div>
+      </section>
+  
+      <section class="w-full pb-4 my-5 relative px-5 xl:px-44 2xl:px-56">
+        <div class="grid grid-cols-4 w-full gap-5">
+          <div class="flex flex-col justify-center items-center gap-4">
+            <img loading='lazy' width="292" height="291" src="[##cms.cms.cdn##]/images/cash-payment.png"
+              alt="cash-payment" class="!w-[97px] !h-[97px]" />
+            <p class="font-bold text-xl">بهترین قیمت تور</p>
+            <p class="tetx-zinc-700 text-sm text-center w-[70%]">
+              .با بهترین نرخ‌های تور، سفر رویایی خود را بدون دغدغه هزینه آغاز کنید. ما با ارائه تخفیف‌های ویژه، پکیج‌های سفری متنوع و امکانات عالی، تجربه‌ای فراموش‌نشدنی را برای شما رقم می‌زنیم
+            </p>
+          </div>
+  
+          <div class="flex flex-col justify-center items-center gap-4">
+            <img loading='lazy' width="292" height="291" src="[##cms.cms.cdn##]/images/credit.png" alt="credit-payment"
+              class="!w-[97px] !h-[97px]" />
+            <p class="font-bold text-xl text-center">کارت سفر</p>
+            <p class="tetx-zinc-700 text-sm text-center w-[70%]">
+            .با کارت سفر، هزینه‌های سفرتان را هوشمندانه مدیریت کنید. امکان پرداخت سریع، رزرو بلیط، و استفاده در مراکز خرید و هتل‌ها را با امنیت بالا تجربه کنید
+            </p>
+          </div>
+  
+          <div class="flex flex-col justify-center items-center gap-4">
+            <img loading='lazy' width="292" height="291" src="[##cms.cms.cdn##]/images/boarding-pass.png"
+              alt="credit-payment" class="!w-[97px] !h-[97px]" />
+            <p class="font-bold text-xl text-center">دریافت ویزا</p>
+            <p class="tetx-zinc-700 text-sm text-center w-[70%]">
+  .با دریافت ویزا، مسیر سفرهای خارجی خود را هموار کنید. از مراحل درخواست گرفته تا مدارک مورد نیاز، ما شما را در این فرآیند همراهی می‌کنیم تا تجربه‌ای بدون دغدغه داشته باشید
+            </p>
+          </div>
+  
+          <div class="flex flex-col justify-center items-center gap-4">
+            <img loading='lazy' width="292" height="291" src="[##cms.cms.cdn##]/images/customer-service.png"
+              alt="credit-payment" class="!w-[97px] !h-[97px]" />
+            <p class="font-bold text-xl text-center">پشتیبانی24/7</p>
+            <p class="tetx-zinc-700 text-sm text-center w-[70%]">
+            با خدمات پشتیبانی ۲۴ ساعته، در هر زمان و هر مکان پاسخگوی نیازهای شما هستیم. بدون محدودیت زمانی، راهنمایی سریع و مطمئن دریافت کنید تا سفرتان بدون دغدغه باشد
+            </p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="w-full flex flex-col gap-6 py-16 relative px-5 xl:px-44 2xl:px-56">
+        <basis core="list" datamembername="db.blgs-section">
+          <Layout>
+            <ul class="w-full grid grid-cols-7 gap-8 pb-7 border-b border-zinc-200">@child</ul>
+          </Layout>
+          <face>
+            <li data-id="@id"
+              class="tour-li whitespace-nowrap text-zinc-900 cursor-pointer font-bold text-xl hover:text-primary-900 transition-all duration-300 ease-in-out">
+              @title
+            </li>
+          </face>
+        </basis>
+        <div class="fetch-content-article flex justify-center items-center w-full">
+          <span class="loader"></span>
+        </div>
+  
+      </section>
+  
+  
+  
+      <basis core="list" datamembername="db.blogs-list">
+        <layout>
+          <section class="w-full flex flex-col gap-6 py-2 relative px-5 xl:px-44 2xl:px-56">
+            <div class="flex gap-3 items-center">
+              <p class="text-2xl text-zinc-900 font-bold">مقالات</p>
+              <div class="w-[90%] border-t border-dashed border-zinc-400"></div>
+              <a href="/Tourism-Magazine"
+                class="text-secondary-800 whitespace-nowrap transition-all duration-300 ease-in-out hover:text-primary-700 hover:scale-110 text-base">مشاهده
+                بیشتر</a>
+            </div>
+            <div class="w-full grid grid-cols-4 gap-4">
+              @child
+  
+            </div>
+          </section>
+        </layout>
+        <face>
+          <article class="flex flex-col relative rounded-lg bg-primary-800 !h-[409px] overflow-hidden">
+            <img loading='lazy' class="!w-full !h-[186px]" width="305" height="186" 
+            src="@00305X00186prp" alt="@title" />
+            <div
+              class="absolute flex flex-col p-5 gap-4 w-[91%] right-[4.8%] top-[28%] h-[279px] z-20 bg-white rounded-lg">
+              <h6 class="line-clamp-1 text-base font-bold">
+                @title
+              </h6>
+              <p class="text-zinc-600 text-sm line-clamp-[8]">
+                @prp_7244
+              </p>
+              <div class="w-full flex justify-center items-center">
+                <a href="@link"
+                  class="text-sm text-primary-800 transition-all hover:font-bold duration-200 ease-in-out hover:text-secondary-800 hover:scale-110">مشاهده
+                  بیشتر</a>
+              </div>
+            </div>
+          </article>
+        </face>
+        <face filter="link is null">
+          <article class="flex flex-col relative rounded-lg bg-primary-800 !h-[409px] overflow-hidden">
+            <img loading='lazy' class="!w-full !h-[186px]" width="305" height="186" src="@00305X00186prp" alt="@title" />
+            <div
+              class="absolute flex flex-col p-5 gap-4 w-[91%] right-[4.8%] top-[28%] h-[279px] z-20 bg-white rounded-lg">
+              <h6 class="line-clamp-1 text-base font-bold">
+                @title
+              </h6>
+              <p class="text-zinc-600 text-sm line-clamp-[8]">
+                @prp_7244
+              </p>
+              <div class="w-full flex justify-center items-center">
+                <a href="/article.bc?id=@id"
+                  class="text-sm text-primary-800 transition-all hover:font-bold duration-200 ease-in-out hover:text-secondary-800 hover:scale-110">مشاهده
+                  بیشتر</a>
+              </div>
+            </div>
+          </article>
+        </face>
+      </basis>
+  
+  
+      <section class="w-full flex flex-col gap-6 py-2 relative px-5 xl:px-44 2xl:px-56">
+        <p class="text-2xl text-zinc-900 font-bold">سوالات متداول</p>
+        <div class="w-full flex gap-6">
+          <div class="flex flex-col gap-6 common-questions w-[60%]">
+            <ul class="flex w-fit items-center p-3 [&_input]:hidden gap-6 rounded-lg bg-primary-900">
+              <basis core="list" datamembername="db.faq-section">
+                <face>
+                  <li data-id="@id"
+                    class="faq-li truncate  transition-all whitespace-nowrap hover:bg-secondary-800 text-white duration-300 ease-in-out w-[88px] h-12 flex items-center justify-center rounded-lg cursor-pointer">
+                    @title
+                  </li>
+                </face>
+              </basis>
+            </ul>
+  
+            <div class="fetch-content-faq  w-full">
+              <span class="loader"></span>
+            </div>
+  
+          </div>
+          <div class="w-[30%] h-[409px] bg-zinc-50 rounded-xl p-3 relative">
+            <img loading='lazy' class="!w-full !h-[90%]" width="1176" height="1078"
+              src="[##cms.cms.cdn##]/images/common-qs.png" alt="common-qs" />
+            <div
+              class="chat-box p-3 flex justify-between flex-col absolute z-20 rounded-xl bg-zinc-50 h-[150px] top-[48%] left-[-33%] w-[70%]">
+              <div class="flex gap-3 items-center">
+                <span class="w-14 flex justify-center items-center h-14 rounded-full bg-zinc-100">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12.1461 3.30078C14.8521 3.30078 17.0461 5.49478 17.0461 8.20078C17.0461 10.9068 14.8521 13.1008 12.1461 13.1008C9.44009 13.1008 7.24609 10.9068 7.24609 8.20078C7.24609 5.49478 9.44009 3.30078 12.1461 3.30078Z"
+                      class="fill-zinc-200" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14.4467 14H9.94668C7.44668 14 5.34668 16.1 5.34668 18.6V18.9C5.34668 19.9 6.14668 20.7 7.14668 20.7H17.1467C18.1467 20.7 19.0467 20 18.9467 18.9V18.6C19.0467 16.1 16.9467 14 14.4467 14Z"
+                      class="fill-zinc-200" />
+                  </svg>
+                </span>
+                <div class="flex flex-col gap-1">
+                  <p class="text-zinc-500 text-sm">24/7</p>
+                  <p class="text-zinc-900 text-base">پشتیبانی چت</p>
+                </div>
+              </div>
+              <a href=""
+                class="w-full text-center py-3 hover:bg-secondary-900 hover:font-bold text-white rounded-lg bg-secondary-800">چت
+                واتساپ</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.basiscore.net/basisfly.com/js/swiper-bundle.min.js"></script>
+  
+    <basis core="call" file="footer.inc" />
+    <script src="[##cms.cms.cdn##]/_js/jquery/jquery-3.7.1.min.js" type="text/javascript"></script>
+  </body>
+  
+  </html>
+  </basis>

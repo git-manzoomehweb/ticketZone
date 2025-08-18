@@ -411,6 +411,9 @@ footer .footer-form {
 .w-\[80px\] {
   width: 80px;
 }
+.w-\[85px\] {
+  width: 85px;
+}
 .w-\[90\%\] {
   width: 90%;
 }
@@ -740,12 +743,9 @@ footer .tzone-btn::before {
     padding-right: 1.25rem;
   }
 }
-.btnstyle span:not(.hasNot-login-icon) {
-  display: flex !important;
-}
+
 #contactform [data-bc-question-title],
 #contactform [data-bc-section-title],
-.hasNot-login-icon,
 footer .clear-both {
   display: none !important;
 }
@@ -838,6 +838,32 @@ main {
   position: relative;
 }
 @media not all and (min-width: 1024px) {
+  .Login_Information {
+    width: 42px;
+    height: 42px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px !important;
+    background-color: var(--secondary-900);
+  }
+  .hasNot-login-icon svg {
+    stroke: white !important;
+    stroke-width: 2px !important;
+  }
+  .in-mobile-h .h-\[84px\] {
+    padding: 0 33px !important;
+  }
+  .in-mobile-h {
+    overflow-x: auto;
+  }
+  .in-mobile-h::-webkit-scrollbar {
+    display: none !important;
+  }
+  .in-mobile-h::-webkit-scrollbar-track,
+  .in-mobile-h::-webkit-scrollbar-thumb {
+    display: none !important;
+  }
   footer #contactform [data-bc-validation-part] {
     position: absolute !important;
     top: -25px;
@@ -869,6 +895,18 @@ main {
   }
 }
 @media (min-width: 1024px) {
+  .user-profile-btn {
+    width: 42px !important;
+    height: 42px !important;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: var(--secondary-900) !important;
+  }
+  .hasNot-login-icon {
+    display: none !important ;
+  }
   .lg\:\!line-clamp-5 {
     overflow: hidden !important;
     display: -webkit-box !important;
@@ -1029,11 +1067,17 @@ main {
 }
 .Login-or-Creat-acount-mobile {
   display: flex !important;
-  flex-direction: column-reverse;
+  gap: 8px !important;
   align-items: center;
-  gap: 5rem;
 }
 .searchHistory-content form:hover {
   border-bottom: 5px solid var(--secondary-900) !important;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.user-icon svg {
+  stroke: white !important;
+}
+.user-profile-btn {
+  display: flex;
+  align-items: center;
 }

@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!headerB) return;
 
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 1370) {
+    if (window.scrollY > 470) {
       headerB.style.position = "fixed";
       headerB.style.top = "0";
       headerB.style.left = "0";
@@ -310,14 +310,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-const target = document.querySelector("main");
+const target = document.querySelector("body");
 document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".header-landing-items")) {
-    const isHomePage = window.location.pathname === "/";
+    const homePaths = ["/", "/flight", "/hotel", "/flighthotel", "/tour"];
+
+  
+    const currentPath = window.location.pathname;
+    const isHomePage = homePaths.includes(currentPath);
     const isNotHome = !isHomePage;
 
     const flightItem = document.querySelectorAll('div[data-id="flight"]');
     const hotelItem = document.querySelectorAll('div[data-id="hotel"]');
+    const tourItem = document.querySelectorAll('div[data-id="tour"]');
     const flightHotelItem = document.querySelectorAll(
       'div[data-id="flighthotel"]'
     );
@@ -327,6 +332,14 @@ document.addEventListener("DOMContentLoaded", function () {
           item.addEventListener("click", function (e) {
             e.preventDefault();
             window.location.href = "/flight";
+          });
+        });
+      }
+      if (tourItem) {
+        tourItem.forEach((item) => {
+          item.addEventListener("click", function (e) {
+            e.preventDefault();
+            window.location.href = "/tour";
           });
         });
       }
@@ -359,6 +372,17 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         });
       }
+      if (tourItem) {
+        tourItem.forEach((item) => {
+          item.addEventListener("click", function () {
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth" });
+            }
+            check_searchHistory("tour");
+            check_landing("tour");
+          });
+        });
+      }
       if (flightHotelItem) {
         flightHotelItem.forEach((item) => {
           item.addEventListener("click", function () {
@@ -388,38 +412,38 @@ document.addEventListener("DOMContentLoaded", function () {
 // _____________________________________________________
 // _____________________________________________________
 // _____________________________________________________
-document.addEventListener("DOMContentLoaded", function () {
-  const desktopContainer = document.querySelector(
-    ".Login-or-Creat-acount-desktop"
-  );
-  const mobileContainer = document.querySelector(
-    ".Login-or-Creat-acount-mobile"
-  );
+// document.addEventListener("DOMContentLoaded", function () {
+//   const desktopContainer = document.querySelector(
+//     ".Login-or-Creat-acount-desktop"
+//   );
+//   const mobileContainer = document.querySelector(
+//     ".Login-or-Creat-acount-mobile"
+//   );
 
-  // برای ذخیره‌ی محتوای اولیه فقط یک‌بار
-  let originalContent = desktopContainer.innerHTML;
+//   // برای ذخیره‌ی محتوای اولیه فقط یک‌بار
+//   let originalContent = desktopContainer.innerHTML;
 
-  function moveContentBasedOnWidth() {
-    const isMobile = window.innerWidth <= 848;
+//   function moveContentBasedOnWidth() {
+//     const isMobile = window.innerWidth <= 848;
 
-    if (isMobile) {
-      if (desktopContainer.innerHTML.trim() !== "") {
-        mobileContainer.innerHTML = desktopContainer.innerHTML;
-        desktopContainer.innerHTML = "";
-      }
-    } else {
-      if (desktopContainer.innerHTML.trim() === "") {
-        desktopContainer.innerHTML =
-          mobileContainer.innerHTML || originalContent;
-        mobileContainer.innerHTML = "";
-      }
-    }
-  }
+//     if (isMobile) {
+//       if (desktopContainer.innerHTML.trim() !== "") {
+//         mobileContainer.innerHTML = desktopContainer.innerHTML;
+//         desktopContainer.innerHTML = "";
+//       }
+//     } else {
+//       if (desktopContainer.innerHTML.trim() === "") {
+//         desktopContainer.innerHTML =
+//           mobileContainer.innerHTML || originalContent;
+//         mobileContainer.innerHTML = "";
+//       }
+//     }
+//   }
 
-  moveContentBasedOnWidth();
+//   moveContentBasedOnWidth();
 
-  window.addEventListener("resize", moveContentBasedOnWidth);
-});
+//   window.addEventListener("resize", moveContentBasedOnWidth);
+// });
 
 // _____________________________________________________
 // _____________________________________________________
@@ -804,7 +828,7 @@ function currency_selected(element) {
         fetch("/Client_Currency_Rate.bc")
           .then((response) => response.text())
           .then((text) => {
-            console.log("Server response:", text);
+            // console.log("Server response:", text);
             const data_currency = JSON.parse(text.replace(/\'/g, '"'));
             let currencyList = headerResize.querySelector(".currency-list ul");
             data_currency.rate.forEach((rate) => {

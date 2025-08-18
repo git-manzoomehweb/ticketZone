@@ -385,3 +385,6 @@ html {
     url("../_fonts/fontawesome5-solid-900.ttf") format("truetype"),
     url("../_fonts/fontawesome5-solid-900.svg") format("svg");
 }
+.currency-selected::before {
+  font-weight: 900 !important;
+}

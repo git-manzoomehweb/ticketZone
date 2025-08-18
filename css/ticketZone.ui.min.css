@@ -2405,6 +2405,10 @@ body.hotel .flight-box {
   margin-bottom: 10px;
   font-size: 12px !important;
 }
+#search-box  .down-icon {
+  width: 17px !important;
+  height: 10px !important;
+}
 #search-box .second-room-type,
 #search-box .second-room-type div {
   display: flex !important;
@@ -2484,4 +2488,7 @@ body.flighthotel .flight-box {
 }
 #search-box .selectLocation svg {
   display: none;
+}
+.Basis_Date_Box p {
+  display: none !important;
 }
