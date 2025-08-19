@@ -293,7 +293,28 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!headerB) return;
 
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 470) {
+    const scrollY = window.scrollY;
+
+    // افزودن کلاس transition وقتی نزدیک 470 شد
+    if (scrollY >= 460) {
+      headerB.classList.add("transition-all", "ease-in-out", "duration-500");
+    } else {
+      headerB.classList.remove("transition-all", "ease-in-out", "duration-500");
+    }
+
+    // کنترل opacity و فیکس شدن هدر
+    if (scrollY >= 160 && scrollY < 470) {
+      headerB.style.opacity = "0";
+   
+      headerB.style.position = "";
+      headerB.style.top = "-160px";
+      headerB.style.left = "";
+      headerB.style.width = "";
+      headerB.style.zIndex = "";
+      headerB.style.boxShadow = "";
+    } else if (scrollY >= 470) {
+      headerB.style.opacity = "1";
+      headerB.style.height = "";
       headerB.style.position = "fixed";
       headerB.style.top = "0";
       headerB.style.left = "0";
@@ -301,6 +322,8 @@ document.addEventListener("DOMContentLoaded", function () {
       headerB.style.zIndex = "60";
       headerB.style.boxShadow = "0px 4px 20px 0px #27272714";
     } else {
+      // زیر 160
+      headerB.style.opacity = "1";
       headerB.style.position = "";
       headerB.style.top = "";
       headerB.style.left = "";
@@ -310,12 +333,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 const target = document.querySelector("body");
 document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".header-landing-items")) {
     const homePaths = ["/", "/flight", "/hotel", "/flighthotel", "/tour"];
 
-  
     const currentPath = window.location.pathname;
     const isHomePage = homePaths.includes(currentPath);
     const isNotHome = !isHomePage;

@@ -402,6 +402,9 @@ footer .footer-form {
 .w-\[140px\] {
   width: 140px;
 }
+.w-\[170px\] {
+  width: 170px;
+}
 .w-\[68px\] {
   width: 68px;
 }
@@ -575,6 +578,9 @@ footer .footer-form {
 }
 .duration-300 {
   transition-duration: 0.3s;
+}
+.duration-500 {
+  transition-duration: 0.5s;
 }
 .airplane,
 a,
