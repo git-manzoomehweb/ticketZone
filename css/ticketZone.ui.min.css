@@ -2247,12 +2247,23 @@ body.hotel .flight-box {
   transform: translateY(-7px);
 }
 @media not all and (min-width: 1024px) {
+  body {
+    position: unset !important;
+    top: unset !important;
+  }
   #search-box .reservation-item {
     position: absolute;
     padding: 8px 14px !important;
 
     justify-content: space-between !important;
     align-items: center;
+  }
+  .flighttype-items ul {
+    display: flex;
+    align-items: center !important;
+    gap: 4px;
+    width: 100% !important;
+    justify-content: center;
   }
   #search-box li.tour-btn .module-icon {
     transform: translate(-7px, -7px) !important;
